@@ -1,0 +1,15 @@
+{
+  "name": "projectopdracht-rma1040",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.13.2",
+    "@types/readline-sync": "^1.4.8"
+  }
+}
