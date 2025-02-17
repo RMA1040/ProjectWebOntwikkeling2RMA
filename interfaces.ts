@@ -6,6 +6,7 @@ interface Driver{
     description:string,
     age:number,
     driverNumber:number,
+    nationality:string,
     isActive:boolean,
     birthdate:Date,
     firstRace:Date,
