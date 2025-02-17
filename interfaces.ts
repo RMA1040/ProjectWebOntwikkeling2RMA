@@ -1,6 +1,6 @@
 import { Interface } from "readline"
 
-interface Driver{
+export interface Driver{
     id:string,
     name:string,
     description:string,
@@ -8,24 +8,17 @@ interface Driver{
     driverNumber:number,
     nationality:string,
     isActive:boolean,
-    birthdate:Date,
-    firstRace:Date,
+    birthdate:string, // of toch  "Date"?
+    firstRace:string, // of toch  "Date"?
     teams:[string],
-    currentTeam:{
-        id:string,
-        name:string,
-        description:string,
-        dateOfExistence:Date,
-        amountOfChampionships:number,
-        amountOfWins:number
-    }
+    currentTeam:Team
 }
 
-interface Team{
+export interface Team{
     id:string,
     name:string,
     description:string,
-    dateOfExistence:Date,
+    dateOfExistence:string, // of toch  "Date"?
     amountOfChampionships:number,
     amountOfWins:number
 }
