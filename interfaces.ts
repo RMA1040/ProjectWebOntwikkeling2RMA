@@ -10,7 +10,7 @@ export interface Driver{
     isActive:boolean,
     birthdate:string, // of toch  "Date"?
     firstRace:string, // of toch  "Date"?
-    teams:[string],
+    teams:string[],
     currentTeam:Team
 }
 

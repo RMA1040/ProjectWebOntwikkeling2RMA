@@ -11,7 +11,15 @@
       "firstRace": "2019-04-12",
       "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/Jack%20Simmons.jpg?raw=true",
       "teams": ["Titan Racing", "Apex Velocity"],
-      "currentTeam": "Titan Racing"
+      "currentTeam":{
+        "id": "TIT",
+        "name": "Titan Racing",
+        "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/TITAN%20RACING.png?raw=true",
+        "description": "A legendary team known for their dominance in the early years of the championship.",
+        "dateOfExistence": "12-05-1985",
+        "amountOfChampionships": 15,
+        "amountOfWins": 78
+      }
     },
     {
       "id": "LMR",
@@ -25,7 +33,15 @@
       "firstRace": "2020-03-15",
       "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/Liam%20Mercer.jpg?raw=true",
       "teams": ["Thunderstrike GP", "Phoenix Dynamics"],
-      "currentTeam": "Thunderstrike GP"
+      "currentTeam": {
+        "id": "THS",
+        "name": "Thunderstrike GP",
+        "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/THUNDERSTRIKEGP.png?raw=true",
+        "description": "Known for their risky pit strategies and fearless overtaking.",
+        "dateOfExistence": "21-07-1998",
+        "amountOfChampionships": 5,
+        "amountOfWins": 31
+      }
     },
     {
       "id": "AWR",
@@ -39,7 +55,15 @@
       "firstRace": "2022-06-05",
       "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/Aaron%20Wright.jpg?raw=true",
       "teams": ["Nova Motorsport", "Eclipse Racing"],
-      "currentTeam": "Nova Motorsport"
+      "currentTeam": {
+        "id": "NVA",
+        "name": "Nova Motorsport",
+        "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/NOVA.png?raw=true",
+        "description": "A rising team with a reputation for nurturing young talent.",
+        "dateOfExistence": "10-04-2005",
+        "amountOfChampionships": 3,
+        "amountOfWins": 18
+      }
     },
     {
       "id": "DSK",
@@ -53,7 +77,15 @@
       "firstRace": "2012-03-23",
       "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/David%20Skelton.jpg?raw=true",
       "teams": ["Hyperion GP", "Solaris Speed"],
-      "currentTeam": "Hyperion GP"
+      "currentTeam": {
+        "id": "HYP",
+        "name": "Hyperion GP",
+        "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/HYPERION.png?raw=true",
+        "description": "Backed by a major tech corporation, they invest heavily in hybrid power units.",
+        "dateOfExistence": "05-12-2008",
+        "amountOfChampionships": 2,
+        "amountOfWins": 12
+      }
     },
     {
       "id": "BFR",
@@ -67,7 +99,15 @@
       "firstRace": "2023-07-01",
       "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/Ben%20Foster.jpg?raw=true",
       "teams": ["Quantum Racing", "Orion Motorsport"],
-      "currentTeam": "Quantum Racing"
+      "currentTeam": {
+        "id": "QTM",
+        "name": "Quantum Racing",
+        "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/QUANTUM.png?raw=true",
+        "description": "A high-risk, high-reward team that either dominates or struggles.",
+        "dateOfExistence": "19-11-2000",
+        "amountOfChampionships": 6,
+        "amountOfWins": 33
+      }
     },
     {
       "id": "TWN",
@@ -81,7 +121,15 @@
       "firstRace": "2016-05-11",
       "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/Tommy%20Winters.jpg?raw=true",
       "teams": ["Titan Racing", "Eclipse Racing"],
-      "currentTeam": "Eclipse Racing"
+      "currentTeam": {
+        "id": "ECL",
+        "name": "Eclipse Racing",
+        "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/ECLIPSE.png?raw=true",
+        "description": "A consistent midfield team with a reputation for strategic brilliance.",
+        "dateOfExistence": "28-02-1995",
+        "amountOfChampionships": 4,
+        "amountOfWins": 25
+      }
     },
     {
       "id": "MCC",
@@ -95,7 +143,15 @@
       "firstRace": "2021-08-03",
       "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/Mark%20Cooper.jpg?raw=true",
       "teams": ["Apex Velocity", "Nova Motorsport"],
-      "currentTeam": "Apex Velocity"
+      "currentTeam": {
+        "id": "APX",
+        "name": "Apex Velocity",
+        "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/raw/main/images/APEX%20VELOCITY.png?raw=true",
+        "description": "A team focused on cutting-edge aerodynamics and aggressive race strategies.",
+        "dateOfExistence": "03-09-1992",
+        "amountOfChampionships": 8,
+        "amountOfWins": 45
+      }
     },
     {
       "id": "RHN",
@@ -109,7 +165,15 @@
       "firstRace": "2015-09-09",
       "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/Ryan%20Henshaw.jpg?raw=true",
       "teams": ["Phoenix Dynamics", "Solaris Speed"],
-      "currentTeam": "Phoenix Dynamics"
+      "currentTeam": {
+        "id": "PXD",
+        "name": "Phoenix Dynamics",
+        "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/PHOENIX.png?raw=true",
+        "description": "A historic team that has rebounded from multiple near collapses.",
+        "dateOfExistence": "15-06-1979",
+        "amountOfChampionships": 10,
+        "amountOfWins": 62
+      }
     },
     {
       "id": "SFT",
@@ -123,7 +187,15 @@
       "firstRace": "2022-06-04",
       "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/Samuel%20Fletcher.jpg?raw=true",
       "teams": ["Hyperion GP", "Thunderstrike GP"],
-      "currentTeam": "Thunderstrike GP"
+      "currentTeam": {
+        "id": "THS",
+        "name": "Thunderstrike GP",
+        "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/THUNDERSTRIKEGP.png?raw=true",
+        "description": "Known for their risky pit strategies and fearless overtaking.",
+        "dateOfExistence": "21-07-1998",
+        "amountOfChampionships": 5,
+        "amountOfWins": 31
+      }
     },
     {
       "id": "OHL",
@@ -137,7 +209,15 @@
       "firstRace": "2019-03-17",
       "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/Oscar%20Holland.jpg?raw=true",
       "teams": ["Eclipse Racing", "Orion Motorsport"],
-      "currentTeam": "Orion Motorsport"
+      "currentTeam": {
+        "id": "ORI",
+        "name": "Orion Motorsport",
+        "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/ORION.png?raw=true",
+        "description": "A fan-favorite team with an underdog spirit and passionate supporters.",
+        "dateOfExistence": "08-05-1983",
+        "amountOfChampionships": 7,
+        "amountOfWins": 40
+      }
     },
     {
       "id": "GMB",
@@ -151,7 +231,15 @@
       "firstRace": "2017-05-02",
       "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/Gavin%20McBride.jpg?raw=true",
       "teams": ["Titan Racing", "Quantum Racing"],
-      "currentTeam": "Quantum Racing"
+      "currentTeam": {
+        "id": "QTM",
+        "name": "Quantum Racing",
+        "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/QUANTUM.png?raw=true",
+        "description": "A high-risk, high-reward team that either dominates or struggles.",
+        "dateOfExistence": "19-11-2000",
+        "amountOfChampionships": 6,
+        "amountOfWins": 33
+      }
     },
     {
       "id": "JRH",
@@ -165,7 +253,15 @@
       "firstRace": "2014-04-26",
       "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/Jordan%20Hart.jpg?raw=true",
       "teams": ["Nova Motorsport", "Apex Velocity"],
-      "currentTeam": "Nova Motorsport"
+      "currentTeam": {
+        "id": "NVA",
+        "name": "Nova Motorsport",
+        "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/NOVA.png?raw=true",
+        "description": "A rising team with a reputation for nurturing young talent.",
+        "dateOfExistence": "10-04-2005",
+        "amountOfChampionships": 3,
+        "amountOfWins": 18
+      }
     },
     {
       "id": "WGR",
@@ -179,7 +275,15 @@
       "firstRace": "2018-03-21",
       "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/Will%20Grant.jpg?raw=true",
       "teams": ["Thunderstrike GP", "Phoenix Dynamics"],
-      "currentTeam": "Thunderstrike GP"
+      "currentTeam": {
+        "id": "THS",
+        "name": "Thunderstrike GP",
+        "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/THUNDERSTRIKEGP.png?raw=true",
+        "description": "Known for their risky pit strategies and fearless overtaking.",
+        "dateOfExistence": "21-07-1998",
+        "amountOfChampionships": 5,
+        "amountOfWins": 31
+      }
     },
     {
       "id": "DLN",
@@ -193,7 +297,15 @@
       "firstRace": "2017-10-10",
       "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/Dylan%20Norton.jpg?raw=true",
       "teams": ["Hyperion GP", "Solaris Speed"],
-      "currentTeam": "Solaris Speed"
+      "currentTeam": {
+        "id": "SOL",
+        "name": "Solaris Speed",
+        "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/SOLARIS.png?raw=true",
+        "description": "One of the oldest teams, known for their endurance and reliability.",
+        "dateOfExistence": "23-08-1975",
+        "amountOfChampionships": 12,
+        "amountOfWins": 55
+      }
     },
     {
       "id": "RCL",
@@ -207,7 +319,15 @@
       "firstRace": "2021-02-15",
       "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/Ricky%20Lowe.jpg?raw=true",
       "teams": ["Eclipse Racing", "Orion Motorsport"],
-      "currentTeam": "Eclipse Racing"
+      "currentTeam": {
+        "id": "ECL",
+        "name": "Eclipse Racing",
+        "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/ECLIPSE.png?raw=true",
+        "description": "A consistent midfield team with a reputation for strategic brilliance.",
+        "dateOfExistence": "28-02-1995",
+        "amountOfChampionships": 4,
+        "amountOfWins": 25
+      }
     },
     {
         "id": "NMC",
@@ -221,7 +341,15 @@
         "firstRace": "2021-08-22",
         "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/Nathan%20McAllister.jpg?raw=true",
         "teams": ["Titan Racing", "Apex Velocity"],
-        "currentTeam": "Apex Velocity"
+        "currentTeam": {
+          "id": "APX",
+          "name": "Apex Velocity",
+          "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/raw/main/images/APEX%20VELOCITY.png?raw=true",
+          "description": "A team focused on cutting-edge aerodynamics and aggressive race strategies.",
+          "dateOfExistence": "03-09-1992",
+          "amountOfChampionships": 8,
+          "amountOfWins": 45
+        }
       },
       {
         "id": "ETH",
@@ -235,7 +363,15 @@
         "firstRace": "2017-04-09",
         "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/Ethan%20Hughes.jpg?raw=true",
         "teams": ["Thunderstrike GP", "Hyperion GP"],
-        "currentTeam": "Hyperion GP"
+        "currentTeam": {
+          "id": "HYP",
+          "name": "Hyperion GP",
+          "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/HYPERION.png?raw=true",
+          "description": "Backed by a major tech corporation, they invest heavily in hybrid power units.",
+          "dateOfExistence": "05-12-2008",
+          "amountOfChampionships": 2,
+          "amountOfWins": 12
+        }
       },
       {
         "id": "KVL",
@@ -249,7 +385,15 @@
         "firstRace": "2020-03-17",
         "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/Kai%20Varela.jpg?raw=true",
         "teams": ["Nova Motorsport", "Phoenix Dynamics"],
-        "currentTeam": "Phoenix Dynamics"
+        "currentTeam": {
+          "id": "PXD",
+          "name": "Phoenix Dynamics",
+          "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/PHOENIX.png?raw=true",
+          "description": "A historic team that has rebounded from multiple near collapses.",
+          "dateOfExistence": "15-06-1979",
+          "amountOfChampionships": 10,
+          "amountOfWins": 62
+        }
       },
       {
         "id": "BLD",
@@ -263,7 +407,15 @@
         "firstRace": "2013-06-02",
         "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/Brandon%20Lloyd.jpg?raw=true",
         "teams": ["Solaris Speed", "Quantum Racing"],
-        "currentTeam": "Solaris Speed"
+        "currentTeam": {
+          "id": "SOL",
+          "name": "Solaris Speed",
+          "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/SOLARIS.png?raw=true",
+          "description": "One of the oldest teams, known for their endurance and reliability.",
+          "dateOfExistence": "23-08-1975",
+          "amountOfChampionships": 12,
+          "amountOfWins": 55
+        }
       },
       {
         "id": "XAV",
@@ -277,6 +429,14 @@
         "firstRace": "2022-09-05",
         "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/Xavier%20Montoya.jpg?raw=true",
         "teams": ["Eclipse Racing", "Orion Motorsport"],
-        "currentTeam": "Orion Motorsport"
+        "currentTeam": {
+          "id": "ORI",
+          "name": "Orion Motorsport",
+          "imageUrl": "https://github.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/blob/main/images/ORION.png?raw=true",
+          "description": "A fan-favorite team with an underdog spirit and passionate supporters.",
+          "dateOfExistence": "08-05-1983",
+          "amountOfChampionships": 7,
+          "amountOfWins": 40
+        }
       }
 ]  
