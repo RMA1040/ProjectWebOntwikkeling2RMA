@@ -8,30 +8,28 @@ const teams: Team[] = team;
 let userChoice : number;
 
 function ShowDriver(driver:Driver){
-    drivers.forEach(driver => {
-        console.log(`🚗  ${driver.name}  (#${driver.driverNumber})`);
-        console.log(`   📌 ID: ${driver.id}`);
-        console.log(`   🌍 Nationality: ${driver.nationality}`);
-        console.log(`   🏎️ Teams: ${driver.teams.join(", ")}`);
-        console.log(`   🎂 Birthdate: ${driver.birthdate}`);
-        console.log(`   🏁 First Race: ${driver.firstRace}`);
-        console.log(`   🏆 Active: ${driver.isActive ? "✅ Yes" : "❌ No"}`);
-        console.log(`   ⭐ Current Team: ${driver.currentTeam.name}`);
-        console.log(`   -  ID: ${driver.currentTeam.id}`);
-        console.log(`   -  Description: ${driver.currentTeam.description}`);
-        console.log(`   -  Exist since: ${driver.currentTeam.dateOfExistence}`);
-        console.log(`   -  Championships: ${driver.currentTeam.amountOfChampionships}`);
-        console.log(`   -  Wins: ${driver.currentTeam.amountOfWins}`);
-        console.log("---------------------------------------------------");
-    });
+    console.log(`🚗  ${driver.name}  (#${driver.driverNumber})`);
+    console.log(`   📌 ID: ${driver.id}`);
+    console.log(`   🌍 Nationality: ${driver.nationality}`);
+    console.log(`   🏎️ Teams: ${driver.teams.join(", ")}`);
+    console.log(`   🎂 Birthdate: ${driver.birthdate}`);
+    console.log(`   🏁 First Race: ${driver.firstRace}`);
+    console.log(`   🏆 Active: ${driver.isActive ? "✅ Yes" : "❌ No"}`);
+    console.log(`   ⭐ Current Team: ${driver.currentTeam.name}`);
+    console.log(`   -  ID: ${driver.currentTeam.id}`);
+    console.log(`   -  Description: ${driver.currentTeam.description}`);
+    console.log(`   -  Exist since: ${driver.currentTeam.dateOfExistence}`);
+    console.log(`   -  Championships: ${driver.currentTeam.amountOfChampionships}`);
+    console.log(`   -  Wins: ${driver.currentTeam.amountOfWins}`);
+    console.log("---------------------------------------------------");
 };
 
 while(true){
     console.log("Welcome to the the JSON data viewer!")
-    console.log()
-    let choices : string[] = ["View all data", "Filter by ID","Exit"]
-    console.log()
-    userChoice = readline.keyInSelect(choices, "Please enter your choice: ")
+    console.log();
+    let choices : string[] = ["View all data", "Filter by ID","Exit"];
+    console.log();
+    userChoice = readline.keyInSelect(choices, "Please enter your choice: ");
     console.clear();
     switch(userChoice){
         case 0:
@@ -45,11 +43,11 @@ while(true){
             // code that filters drivers by given ID by user
             const idInput = readline.question("Enter driver ID: ").toUpperCase();
             const foundDriver = drivers.find(driver => driver.id == idInput);
-            if(foundDriver){
-                ShowDriver(foundDriver);
+            if(!foundDriver){
+                console.log(`Sorry ${idInput} is not a valid ID. Please try again.`);
             }
             else{
-                console.log(`Sorry ${idInput} is not a valid ID. Please try again.`);
+                ShowDriver(foundDriver);
             }
             break;
         case 2:
