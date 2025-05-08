@@ -1,3 +1,39 @@
 <%- include("partials/header") %>
-<h1>Teams</h1>
+<main>
+    <section>
+        <h1>All Teams</h1>
+    </section>
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Logo</th>
+                    <th>Name</th>
+                    <th>Championships</th>
+                    <th>Wins</th>
+                    <th>Founded</th>
+                    <th>Active Drivers</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% teams.forEach(team => { %>
+                <tr>
+                    <td>
+                        <img src="/images/team_logos/<%= team.id %>.png" 
+                             alt="<%= team.name %>" 
+                             style="width: 60px; height: 60px; object-fit: contain;">
+                    </td>
+                    <td><%= team.name %></td>
+                    <td><%= team.amountOfChampionships %></td>
+                    <td><%= team.amountOfWins %></td>
+                    <td><%= new Date(team.dateOfExistence).getFullYear() %></td>
+                    <td><%= drivers.filter(d => d.currentTeam.id === team.id && d.isActive).length %></td>
+                    <td><a href="#" class="button">Details</a></td>
+                </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </section>
+</main>
 <%- include("partials/footer") %>

@@ -1,3 +1,52 @@
 <%- include("partials/header") %>
-<h1>Drivers</h1>
+<main>
+    <section>
+        <h1>All Drivers</h1>
+        <table class="drivers-table">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Number</th>
+                    <th>Name</th>
+                    <th>Nationality</th>
+                    <th>Team</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% drivers.forEach(driver => { %>
+                <tr>
+                    <td>
+                        <img src="<%= driver.imageUrl %>" 
+                             alt="<%= driver.name %>" 
+                             class="driver-image"
+                             onerror="this.onerror=null;this.src='/images/default_driver.jpg';">
+                    </td>
+                    <td>#<%= driver.driverNumber %></td>
+                    <td><%= driver.name %></td>
+                    <td>
+                        <img src="https://raw.githubusercontent.com/AP-G-1PRO-Webontwikkeling/projectopdracht-RMA1040/main/images/flags/<%= driver.nationality.toLowerCase().replace(' ', '-') %>.png" 
+                             alt="<%= driver.nationality %>"
+                             class="flag-icon">
+                        <%= driver.nationality %>
+                    </td>
+                    <td>
+                        <img src="<%= driver.currentTeam.imageUrl %>" 
+                             alt="<%= driver.currentTeam.name %>"
+                             class="team-logo">
+                        <%= driver.currentTeam.name %>
+                    </td>
+                    <td class="<%= driver.isActive ? 'status-active' : 'status-inactive' %>">
+                        <%= driver.isActive ? 'Active' : 'Inactive' %>
+                    </td>
+                    <td>
+                        <a href="/driver/<%= driver.id %>" class="button">Details</a>
+                    </td>
+                </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </section>
+</main>
 <%- include("partials/footer") %>
