@@ -91,35 +91,56 @@ tr:hover {
     background-color: #f9f9f9;
 }
 
-/* Images in Tables */
-.table-image {
+/* ===== Table Image Styles ===== */
+.table-image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+  
+  .table-image {
     vertical-align: middle;
-}
-
-.driver-avatar {
-    width: 60px;
-    height: 60px;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* Driver Avatars */
+  .driver-avatar {
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    border: 2px solid #ddd;
-}
-
-.team-logo {
+    border: 3px solid #f0f0f0;
+    object-position: center top;
+  }
+  
+  /* Team Logos */
+  .team-logo {
     width: 60px;
     height: 60px;
     object-fit: contain;
-    padding: 5px;
-    background-color: white;
-    border: 1px solid #eee;
-}
-
-.flag-icon {
-    width: 30px;
-    margin-right: 8px;
-    box-shadow: 0 0 3px rgba(0,0,0,0.2);
-    vertical-align: middle;
-}
-
+    padding: 4px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+  }
+  
+  /* Hover Effects */
+  .table-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    z-index: 10;
+  }
+  
+  /* Fallback Images */
+  .table-image[src*="default"] {
+    filter: grayscale(20%);
+    opacity: 0.9;
+  }
 /* Buttons */
 .button {
     display: inline-block;
@@ -171,24 +192,22 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    table {
-        display: block;
-        overflow-x: auto;
+    .driver-avatar {
+      width: 60px;
+      height: 60px;
     }
     
-    .grid {
-        grid-template-columns: 1fr;
+    .team-logo {
+      width: 50px;
+      height: 50px;
     }
-    
-    nav {
-        text-align: center;
-    }
-    
-    nav a {
-        display: block;
-        margin: 0.5rem 0;
-    }
-}
+  }
+  
+  /* Table Cell Alignment */
+  td img {
+    display: block;
+    margin: 0 auto;
+  }
 
 /* Animation for hover effects */
 tr {
