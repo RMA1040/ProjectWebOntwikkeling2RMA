@@ -60,6 +60,41 @@ app.get("/teams", (req, res) => {
         drivers: drivers
     });
 });
+// driver detail route
+app.get('/driver/:id', (req, res) => {
+    const driverId = req.params.id;
+    const driver = drivers.find(d => d.id === driverId);
+    
+    if (!driver) {
+        return res.status(404).render('error', { 
+            message: 'Driver not found' 
+        });
+    }
+
+    res.render('driver-detail', { 
+        driver: driver,
+        teams: teams 
+    });
+});
+
+// Route for team details
+app.get('/team/:id', (req, res) => {
+    const teamId = req.params.id;
+    const team = teams.find(t => t.id === teamId);
+    const teamDrivers = drivers.filter(d => d.currentTeam.id === teamId);
+    
+    if (!team) {
+        return res.status(404).render('error', { 
+            message: 'Team not found' 
+        });
+    }
+
+    res.render('team-detail', { 
+        team: team,
+        drivers: teamDrivers,
+        allDrivers: drivers
+    });
+});
 
 app.listen(app.get("port"), () => {
     console.log(`[server] http://localhost:${app.get("port")}`);

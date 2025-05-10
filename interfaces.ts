@@ -18,6 +18,7 @@ export interface Driver{
 export interface Team{
     id:string;
     name:string;
+    imageUrl: string;
     description:string;
     dateOfExistence:string; // of toch  "Date"?
     amountOfChampionships:number;

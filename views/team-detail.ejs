@@ -1,0 +1,62 @@
+<%- include("partials/header") %>
+<main class="team-detail-container">
+    <section class="team-header">
+        <div class="team-logo-container">
+            <img src="<%= team.imageUrl %>" 
+                 alt="<%= team.name %> Logo"
+                 class="team-logo"
+                 onerror="this.src='/images/default_team.png'">
+        </div>
+        <div class="team-info">
+            <h1><%= team.name %></h1>
+            <div class="team-meta">
+                <span class="established">
+                    <i class="fas fa-calendar-alt"></i> Since <%= new Date(team.dateOfExistence).getFullYear() %>
+                </span>
+                <span class="championships">
+                    <i class="fas fa-trophy"></i> <%= team.amountOfChampionships %> Championships
+                </span>
+                <span class="wins">
+                    <i class="fas fa-flag-checkered"></i> <%= team.amountOfWins %> Wins
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-description">
+        <h2>Team Description</h2>
+        <p><%= team.description %></p>
+    </section>
+
+    <section class="current-drivers">
+        <h2>Current Drivers</h2>
+        <div class="drivers-grid">
+            <% drivers.forEach(driver => { %>
+            <div class="driver-card">
+                <a href="/driver/<%= driver.id %>" class="driver-link">
+                    <img src="<%= driver.imageUrl %>"
+                         alt="<%= driver.name %>"
+                         class="driver-image"
+                         onerror="this.src='/images/default_driver.jpg'">
+                    <div class="driver-info">
+                        <h3><%= driver.name %></h3>
+                        <span class="driver-number">#<%= driver.driverNumber %></span>
+                        <span class="nationality">
+                            <img src="/images/flags/<%= driver.nationality.toLowerCase().replace(' ', '-') %>.png"
+                                 alt="<%= driver.nationality %>">
+                            <%= driver.nationality %>
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <% }); %>
+        </div>
+    </section>
+
+    <div class="back-button">
+        <a href="/teams" class="button">
+            <i class="fas fa-arrow-left"></i> Back to Teams
+        </a>
+    </div>
+</main>
+<%- include("partials/footer") %>

@@ -20,7 +20,7 @@
                 <% teams.forEach(team => { %>
                 <tr>
                     <td>
-                        <img src="/images/team_logos/<%= team.id %>.png" 
+                        <img src="<%= team.imageUrl %>" 
                              alt="<%= team.name %>" 
                              style="width: 60px; height: 60px; object-fit: contain;">
                     </td>
@@ -29,7 +29,7 @@
                     <td><%= team.amountOfWins %></td>
                     <td><%= new Date(team.dateOfExistence).getFullYear() %></td>
                     <td><%= drivers.filter(d => d.currentTeam.id === team.id && d.isActive).length %></td>
-                    <td><a href="#" class="button">Details</a></td>
+                    <td><a href="/team/<%= team.id %>" class="button view-button">Details</a></td>
                 </tr>
                 <% }); %>
             </tbody>

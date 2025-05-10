@@ -2,7 +2,7 @@
     {
       "id": "TIT",
       "name": "Titan Racing",
-      "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/TITAN%20RACING.png?raw=true",
+      "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/TIT.png?raw=true",
       "description": "A legendary team known for their dominance in the early years of the championship.",
       "dateOfExistence": "12-05-1985",
       "amountOfChampionships": 15,
@@ -11,7 +11,7 @@
     {
       "id": "APX",
       "name": "Apex Velocity",
-      "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/APEX%20VELOCITY.png?raw=true",
+      "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/APX.png?raw=true",
       "description": "A team focused on cutting-edge aerodynamics and aggressive race strategies.",
       "dateOfExistence": "03-09-1992",
       "amountOfChampionships": 8,
@@ -20,7 +20,7 @@
     {
       "id": "THS",
       "name": "Thunderstrike GP",
-      "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/THUNDERSTRIKEGP.png?raw=true",
+      "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/THS.png?raw=true",
       "description": "Known for their risky pit strategies and fearless overtaking.",
       "dateOfExistence": "21-07-1998",
       "amountOfChampionships": 5,
@@ -29,7 +29,7 @@
     {
       "id": "NVA",
       "name": "Nova Motorsport",
-      "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/NOVA.png?raw=true",
+      "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/NVA.png?raw=true",
       "description": "A rising team with a reputation for nurturing young talent.",
       "dateOfExistence": "10-04-2005",
       "amountOfChampionships": 3,
@@ -38,7 +38,7 @@
     {
       "id": "PXD",
       "name": "Phoenix Dynamics",
-      "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/PHOENIX.png?raw=true",
+      "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/PXD.png?raw=true",
       "description": "A historic team that has rebounded from multiple near collapses.",
       "dateOfExistence": "15-06-1979",
       "amountOfChampionships": 10,
@@ -47,7 +47,7 @@
     {
       "id": "ECL",
       "name": "Eclipse Racing",
-      "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/ECLIPSE.png?raw=true",
+      "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/ECL.png?raw=true",
       "description": "A consistent midfield team with a reputation for strategic brilliance.",
       "dateOfExistence": "28-02-1995",
       "amountOfChampionships": 4,
@@ -56,7 +56,7 @@
     {
       "id": "HYP",
       "name": "Hyperion GP",
-      "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/HYPERION.png?raw=true",
+      "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/HYP.png?raw=true",
       "description": "Backed by a major tech corporation, they invest heavily in hybrid power units.",
       "dateOfExistence": "05-12-2008",
       "amountOfChampionships": 2,
@@ -65,7 +65,7 @@
     {
       "id": "SOL",
       "name": "Solaris Speed",
-      "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/SOLARIS.png?raw=true",
+      "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/SOL.png?raw=true",
       "description": "One of the oldest teams, known for their endurance and reliability.",
       "dateOfExistence": "23-08-1975",
       "amountOfChampionships": 12,
@@ -74,7 +74,7 @@
     {
       "id": "QTM",
       "name": "Quantum Racing",
-      "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/QUANTUM.png?raw=true",
+      "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/QTM.png?raw=true",
       "description": "A high-risk, high-reward team that either dominates or struggles.",
       "dateOfExistence": "19-11-2000",
       "amountOfChampionships": 6,
@@ -83,7 +83,7 @@
     {
       "id": "ORI",
       "name": "Orion Motorsport",
-      "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/ORION.png?raw=true",
+      "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/ORI.png?raw=true",
       "description": "A fan-favorite team with an underdog spirit and passionate supporters.",
       "dateOfExistence": "08-05-1983",
       "amountOfChampionships": 7,

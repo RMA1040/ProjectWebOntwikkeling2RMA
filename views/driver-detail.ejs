@@ -1,0 +1,57 @@
+<%- include("partials/header") %>
+<main class="driver-detail">
+    <section class="driver-header">
+        <div class="driver-image">
+            <img src="<%= driver.imageUrl %>" 
+                 alt="<%= driver.name %>"
+                 onerror="this.src='/images/default_driver.jpg'">
+        </div>
+        <div class="driver-info">
+            <h1><%= driver.name %></h1>
+            <div class="driver-meta">
+                <span class="driver-number">#<%= driver.driverNumber %></span>
+                <span class="nationality">
+                    <img src="/images/flags/<%= driver.nationality.toLowerCase().replace(' ', '-') %>.png" 
+                         alt="<%= driver.nationality %>">
+                    <%= driver.nationality %>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section class="driver-stats">
+        <div class="stat-card">
+            <h3>Team</h3>
+            <div class="team-info">
+                <img src="<%= driver.currentTeam.imageUrl %>"
+                     alt="<%= driver.currentTeam.name %>"
+                     onerror="this.src='/images/default_team.png'">
+                <span><%= driver.currentTeam.name %></span>
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <h3>Status</h3>
+            <p class="status <%= driver.isActive ? 'active' : 'inactive' %>">
+                <%= driver.isActive ? 'Active' : 'Inactive' %>
+            </p>
+        </div>
+
+        <div class="stat-card">
+            <h3>First Race</h3>
+            <p><%= new Date(driver.firstRace).toLocaleDateString() %></p>
+        </div>
+    </section>
+
+    <section class="driver-bio">
+        <h2>Biography</h2>
+        <p><%= driver.description %></p>
+    </section>
+
+    <div class="back-button">
+        <a href="/drivers" class="button">
+            <i class="fas fa-arrow-left"></i> Back to Drivers
+        </a>
+    </div>
+</main>
+<%- include("partials/footer") %>
