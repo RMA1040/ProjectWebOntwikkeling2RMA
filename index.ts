@@ -31,12 +31,12 @@ app.get("/drivers", (req, res) => {
     // searching
     const q = typeof req.query.q === "string" ? req.query.q.toLowerCase() : "";
     let filteredDrivers = drivers.filter((driver) => {
-        return driver.name.toLowerCase().startsWith(q.toLowerCase());
+        return driver.name.toLowerCase().startsWith(q);
     });
     // sorting
     const sortField = typeof req.query.sortField === "string" ? req.query.sortField : "name";
     const sortDirection = typeof req.query.sortDirection === "string" ? req.query.sortDirection : "asc";
-     let sortedDrivers = drivers.sort((a, b) => {
+     let sortedDrivers = filteredDrivers.sort((a, b) => {
         if (sortField === "name") {
             return sortDirection === "asc" ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name);
         } else if (sortField === "driverNumber") {
@@ -68,13 +68,13 @@ app.get("/", (req, res) => {
 app.get("/teams", (req, res) => {
     // searching
     let q : string = typeof req.query.q === "string" ? req.query.q : "";
-    let filteredDrivers = driver.filter((driver) => {
-        return driver.name.toLowerCase().startsWith(q.toLowerCase());
+    let filteredTeams = teams.filter((team) => {
+        return team.name.toLowerCase().startsWith(q);
     });
     // sorting
     const sortField = typeof req.query.sortField === "string" ? req.query.sortField : "name";
     const sortDirection = typeof req.query.sortDirection === "string" ? req.query.sortDirection : "asc";
-        let sortedTeams = teams.sort((a, b) => {
+        let sortedTeams = filteredTeams.sort((a, b) => {
         if (sortField === "name") {
             return sortDirection === "asc" ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name);
         } else if (sortField === "amountOfChampionships") {
@@ -87,9 +87,11 @@ app.get("/teams", (req, res) => {
         }
     });
     res.render("teams", {
-        teams: teams,
+        teams: sortedTeams,
         drivers : drivers,
-        q: q
+        q: q,
+        sortField: sortField,
+        sortDirection: sortDirection
     });
 });
 

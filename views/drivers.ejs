@@ -44,9 +44,10 @@
                     <td>#<%= driver.driverNumber %></td>
                     <td><%= driver.name %></td>
                     <td> <%= driver.nationality %></td>
-                    <td class="table-image-wrapper">
+                    <td>
                         <img src="<%= driver.currentTeam.imageUrl %>"
                         class="team-logo"
+                        style="width: 60px; height: 60px; object-fit: contain;"
                         alt="<%= driver.currentTeam.name %>">
                     </td>
                     <td class="<%= driver.isActive ? 'status-active' : 'status-inactive' %>">

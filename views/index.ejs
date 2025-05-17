@@ -4,16 +4,20 @@
         <h1>Racing League Dashboard</h1>
     </section>
     <section class="grid">
-        <article>
-            <h3>Driver Statistics</h3>
-            <p>Total Drivers: <%= drivers.length %></p>
-            <p>Active Drivers: <%= drivers.filter(d => d.isActive).length %></p>
-        </article>
-        <article>
-            <h3>Team Statistics</h3>
-            <p>Total Teams: <%= teams.length %></p>
-            <p>Total Championships: <%= teams.reduce((sum, team) => sum + team.amountOfChampionships, 0) %></p>
-        </article>
+        <a href="/drivers">
+            <article>
+                <h3>Driver Statistics</h3>
+                <p>Total Drivers: <%= drivers.length %></p>
+                <p>Active Drivers: <%= drivers.filter(d => d.isActive).length %></p>
+            </article>
+        </a>
+        <a href="/teams">
+            <article>
+                <h3>Team Statistics</h3>
+                <p>Total Teams: <%= teams.length %></p>
+                <p>Total Championships: <%= teams.reduce((sum, team) => sum + team.amountOfChampionships, 0) %></p>
+            </article>
+        </a>
     </section>
 </main>
 <%- include("partials/footer") %>

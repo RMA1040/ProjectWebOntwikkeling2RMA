@@ -94,24 +94,6 @@ tr:hover {
     background-color: #f9f9f9;
 }
 
-/* ===== Table Image Styles ===== */
-.table-image-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem;
-  }
-  
-  .table-image {
-    vertical-align: middle;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 4px;
-    transition: all 0.2s ease;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  
   /* Driver Avatars */
 .driver-avatar {
     width: 80px;
@@ -430,7 +412,9 @@ tr:hover {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
+.grid a{
+    text-decoration: none;
+}
 /* Status Indicators */
 .status-active {
     color: #27ae60;
