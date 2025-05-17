@@ -2,6 +2,23 @@
 <main>
     <section>
         <h1>All Teams</h1>
+        <form action="/teams" method="get">
+            <label for="search">Search</label>
+            <input type="text" id="search" name="q" value="<%= q %>" placeholder="Enter Team name">
+            <button type="submit">Search</button>
+        </form>
+        <form action="/teams" method="get">
+            <select name="sortField">
+                <option value="name">Name</option>
+                <option value="amountOfChampionships">Championships</option>
+                <option value="amountOfWins">Wins</option>
+            </select>
+            <select name="sortDirection">
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
+            </select>
+            <button type="submit">Sort</button>
+        </form>
     </section>
     <section>
         <table>

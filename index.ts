@@ -26,23 +26,34 @@ function getLocalImagePath(basePath: string): string | null {
     return null;
 }
 
-// Modified route handler with image fallbacks
+// Driver route
 app.get("/drivers", (req, res) => {
-    const enhancedDrivers = drivers.map(driver => {
-        const driverImg = getLocalImagePath(`drivers/${driver.id}`);
-        const teamImg = getLocalImagePath(`teams/${driver.currentTeam.id}`);
-        
-        return {
-            ...driver,
-            localImage: driverImg || '/images/default_driver.jpg',
-            currentTeam: {
-                ...driver.currentTeam,
-                localImage: teamImg || '/images/default_team.png'
-            }
-        };
+    // searching
+    const q = typeof req.query.q === "string" ? req.query.q.toLowerCase() : "";
+    let filteredDrivers = drivers.filter((driver) => {
+        return driver.name.toLowerCase().startsWith(q.toLowerCase());
     });
-
-    res.render("drivers", { drivers: enhancedDrivers });
+    // sorting
+    const sortField = typeof req.query.sortField === "string" ? req.query.sortField : "name";
+    const sortDirection = typeof req.query.sortDirection === "string" ? req.query.sortDirection : "asc";
+     let sortedDrivers = drivers.sort((a, b) => {
+        if (sortField === "name") {
+            return sortDirection === "asc" ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name);
+        } else if (sortField === "driverNumber") {
+            return sortDirection === "asc" ? a.driverNumber - b.driverNumber : b.driverNumber - a.driverNumber;
+        } else if (sortField === "nationality") {
+            return sortDirection === "asc" ? a.nationality.localeCompare(b.nationality) : b.nationality.localeCompare(a.nationality);
+        } else {
+            return 0;
+        }
+    });
+    res.render("drivers", {
+        drivers: sortedDrivers,
+        teams: teams,
+        q: q,
+        sortField: sortField,
+        sortDirection: sortDirection
+    });
 });
 
 // Home route
@@ -55,11 +66,33 @@ app.get("/", (req, res) => {
 
 // Teams route
 app.get("/teams", (req, res) => {
+    // searching
+    let q : string = typeof req.query.q === "string" ? req.query.q : "";
+    let filteredDrivers = driver.filter((driver) => {
+        return driver.name.toLowerCase().startsWith(q.toLowerCase());
+    });
+    // sorting
+    const sortField = typeof req.query.sortField === "string" ? req.query.sortField : "name";
+    const sortDirection = typeof req.query.sortDirection === "string" ? req.query.sortDirection : "asc";
+        let sortedTeams = teams.sort((a, b) => {
+        if (sortField === "name") {
+            return sortDirection === "asc" ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name);
+        } else if (sortField === "amountOfChampionships") {
+            return sortDirection === "asc" ? a.amountOfChampionships - b.amountOfChampionships : b.amountOfChampionships - a.amountOfChampionships;
+        } else if (sortField ==="amountOfWins") {
+            return sortDirection === "asc" ? a.amountOfWins - b.amountOfWins : b.amountOfWins - a.amountOfWins;
+        }
+        else {
+            return 0;
+        }
+    });
     res.render("teams", {
         teams: teams,
-        drivers: drivers
+        drivers : drivers,
+        q: q
     });
 });
+
 // driver detail route
 app.get('/driver/:id', (req, res) => {
     const driverId = req.params.id;

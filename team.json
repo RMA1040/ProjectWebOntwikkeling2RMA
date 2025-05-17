@@ -22,7 +22,7 @@
       "name": "Thunderstrike GP",
       "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/THS.png?raw=true",
       "description": "Known for their risky pit strategies and fearless overtaking.",
-      "dateOfExistence": "21-07-1998",
+      "dateOfExistence": "07-21-1998",
       "amountOfChampionships": 5,
       "amountOfWins": 31
     },
@@ -40,7 +40,7 @@
       "name": "Phoenix Dynamics",
       "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/PXD.png?raw=true",
       "description": "A historic team that has rebounded from multiple near collapses.",
-      "dateOfExistence": "15-06-1979",
+      "dateOfExistence": "06-15-1979",
       "amountOfChampionships": 10,
       "amountOfWins": 62
     },
@@ -49,7 +49,7 @@
       "name": "Eclipse Racing",
       "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/ECL.png?raw=true",
       "description": "A consistent midfield team with a reputation for strategic brilliance.",
-      "dateOfExistence": "28-02-1995",
+      "dateOfExistence": "02-28-1995",
       "amountOfChampionships": 4,
       "amountOfWins": 25
     },
@@ -67,7 +67,7 @@
       "name": "Solaris Speed",
       "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/SOL.png?raw=true",
       "description": "One of the oldest teams, known for their endurance and reliability.",
-      "dateOfExistence": "23-08-1975",
+      "dateOfExistence": "08-23-1975",
       "amountOfChampionships": 12,
       "amountOfWins": 55
     },
@@ -76,7 +76,7 @@
       "name": "Quantum Racing",
       "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/QTM.png?raw=true",
       "description": "A high-risk, high-reward team that either dominates or struggles.",
-      "dateOfExistence": "19-11-2000",
+      "dateOfExistence": "11-19-2000",
       "amountOfChampionships": 6,
       "amountOfWins": 33
     },

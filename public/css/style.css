@@ -68,6 +68,9 @@ nav a:hover {
     color: #e74c3c;
 }
 
+ul{
+    list-style: none;
+}
 /* Tables */
 table {
     width: 100%;

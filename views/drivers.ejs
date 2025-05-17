@@ -2,6 +2,25 @@
 <main>
     <section>
         <h1>All Drivers</h1>
+        <form action="/drivers" method="get">
+            <label for="search">Search</label>
+            <input type="text" id="search" name="q" value="<%= q %>" placeholder="Enter Driver name">
+            <button type="submit">Search</button>
+        </form>
+        <form action="/drivers" method="get">
+            <select name="sortField">
+                <option value="name" <%= sortField === "name" ? "selected" : "" %>>Name</option>
+                <option value="driverNumber" <%= sortField === "driverNumber" ? "selected" : "" %>>Driver Number</option>
+                <option value="nationality" <%= sortField === "nationality" ? "selected" : "" %>>Nationality</option>
+            </select>
+            <select name="sortDirection">
+                <option value="asc" <%= sortDirection === "asc" ? "selected" : "" %>>Ascending</option>
+                <option value="desc" <%= sortDirection === "desc" ? "selected" : "" %>>Descending</option>
+            </select>
+            <button type="submit">Sort</button>
+        </form>
+    </section>
+    <section>
         <table class="drivers-table">
             <thead>
                 <tr>
