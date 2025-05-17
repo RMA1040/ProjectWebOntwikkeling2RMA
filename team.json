@@ -1,93 +1,92 @@
 [
-    {
-      "id": "TIT",
-      "name": "Titan Racing",
-      "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/TIT.png?raw=true",
-      "description": "A legendary team known for their dominance in the early years of the championship.",
-      "dateOfExistence": "12-05-1985",
-      "amountOfChampionships": 15,
-      "amountOfWins": 78
-    },
-    {
-      "id": "APX",
-      "name": "Apex Velocity",
-      "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/APX.png?raw=true",
-      "description": "A team focused on cutting-edge aerodynamics and aggressive race strategies.",
-      "dateOfExistence": "03-09-1992",
-      "amountOfChampionships": 8,
-      "amountOfWins": 45
-    },
-    {
-      "id": "THS",
-      "name": "Thunderstrike GP",
-      "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/THS.png?raw=true",
-      "description": "Known for their risky pit strategies and fearless overtaking.",
-      "dateOfExistence": "07-21-1998",
-      "amountOfChampionships": 5,
-      "amountOfWins": 31
-    },
-    {
-      "id": "NVA",
-      "name": "Nova Motorsport",
-      "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/NVA.png?raw=true",
-      "description": "A rising team with a reputation for nurturing young talent.",
-      "dateOfExistence": "10-04-2005",
-      "amountOfChampionships": 3,
-      "amountOfWins": 18
-    },
-    {
-      "id": "PXD",
-      "name": "Phoenix Dynamics",
-      "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/PXD.png?raw=true",
-      "description": "A historic team that has rebounded from multiple near collapses.",
-      "dateOfExistence": "06-15-1979",
-      "amountOfChampionships": 10,
-      "amountOfWins": 62
-    },
-    {
-      "id": "ECL",
-      "name": "Eclipse Racing",
-      "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/ECL.png?raw=true",
-      "description": "A consistent midfield team with a reputation for strategic brilliance.",
-      "dateOfExistence": "02-28-1995",
-      "amountOfChampionships": 4,
-      "amountOfWins": 25
-    },
-    {
-      "id": "HYP",
-      "name": "Hyperion GP",
-      "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/HYP.png?raw=true",
-      "description": "Backed by a major tech corporation, they invest heavily in hybrid power units.",
-      "dateOfExistence": "05-12-2008",
-      "amountOfChampionships": 2,
-      "amountOfWins": 12
-    },
-    {
-      "id": "SOL",
-      "name": "Solaris Speed",
-      "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/SOL.png?raw=true",
-      "description": "One of the oldest teams, known for their endurance and reliability.",
-      "dateOfExistence": "08-23-1975",
-      "amountOfChampionships": 12,
-      "amountOfWins": 55
-    },
-    {
-      "id": "QTM",
-      "name": "Quantum Racing",
-      "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/QTM.png?raw=true",
-      "description": "A high-risk, high-reward team that either dominates or struggles.",
-      "dateOfExistence": "11-19-2000",
-      "amountOfChampionships": 6,
-      "amountOfWins": 33
-    },
-    {
-      "id": "ORI",
-      "name": "Orion Motorsport",
-      "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/ORI.png?raw=true",
-      "description": "A fan-favorite team with an underdog spirit and passionate supporters.",
-      "dateOfExistence": "08-05-1983",
-      "amountOfChampionships": 7,
-      "amountOfWins": 40
-    }
-  ]
-  
+  {
+    "id": "TIT",
+    "name": "Titan Racing",
+    "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/TIT.png?raw=true",
+    "description": "Titan Racing is one of the most iconic teams in racing history. Founded in 1985, they rose to dominance in the late '80s and maintained their legacy through technical innovation and unparalleled consistency. With a record number of championships and a formidable lineup of legendary drivers, they remain a powerhouse that defines what it means to be elite in motorsport.",
+    "dateOfExistence": "12-05-1985",
+    "amountOfChampionships": 15,
+    "amountOfWins": 78
+  },
+  {
+    "id": "APX",
+    "name": "Apex Velocity",
+    "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/APX.png?raw=true",
+    "description": "Apex Velocity has built its reputation on precision engineering, futuristic design, and an aggressive approach to racing strategy. Since their inception in 1992, they've consistently pushed the envelope of aerodynamics and performance. Known for bold overtakes and boundary-pushing tech, Apex remains a formidable contender each season.",
+    "dateOfExistence": "03-09-1992",
+    "amountOfChampionships": 8,
+    "amountOfWins": 45
+  },
+  {
+    "id": "THS",
+    "name": "Thunderstrike GP",
+    "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/THS.png?raw=true",
+    "description": "Thunderstrike GP embodies a fearless racing philosophy, often making headlines for daring pit stops and thrilling overtakes. Founded in 1998, their unpredictable strategies keep fans on the edge of their seats. While not always the most consistent, their highlights are unforgettable, earning them a loyal global following.",
+    "dateOfExistence": "07-21-1998",
+    "amountOfChampionships": 5,
+    "amountOfWins": 31
+  },
+  {
+    "id": "NVA",
+    "name": "Nova Motorsport",
+    "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/NVA.png?raw=true",
+    "description": "Nova Motorsport has quickly established itself as a breeding ground for the next generation of elite drivers. Since launching in 2005, they’ve focused on development and innovation. Despite being one of the newer teams, their ability to identify and nurture raw talent has earned them industry respect and a growing trophy cabinet.",
+    "dateOfExistence": "10-04-2005",
+    "amountOfChampionships": 3,
+    "amountOfWins": 18
+  },
+  {
+    "id": "PXD",
+    "name": "Phoenix Dynamics",
+    "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/PXD.png?raw=true",
+    "description": "Phoenix Dynamics is the epitome of resilience in motorsport. Established in 1979, the team has seen its share of triumphs and setbacks, rising from near extinction on more than one occasion. Their journey is a testament to persistence and passion, with a legacy of brilliant comebacks and spectacular seasons.",
+    "dateOfExistence": "06-15-1979",
+    "amountOfChampionships": 10,
+    "amountOfWins": 62
+  },
+  {
+    "id": "ECL",
+    "name": "Eclipse Racing",
+    "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/ECL.png?raw=true",
+    "description": "Eclipse Racing has long been known as the tacticians of the grid. Founded in 1995, the team has developed a reputation for clever race management, often turning unlikely situations into podium finishes. While rarely the fastest, they are almost always the smartest, making them a respected opponent in any race.",
+    "dateOfExistence": "02-28-1995",
+    "amountOfChampionships": 4,
+    "amountOfWins": 25
+  },
+  {
+    "id": "HYP",
+    "name": "Hyperion GP",
+    "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/HYP.png?raw=true",
+    "description": "Hyperion GP is the cutting-edge face of modern racing. Backed by a leading technology corporation, they emphasize research into hybrid systems and advanced telemetry. Since their founding in 2008, they have rapidly risen through the ranks, disrupting traditional teams with their data-driven, tech-heavy approach.",
+    "dateOfExistence": "05-12-2008",
+    "amountOfChampionships": 2,
+    "amountOfWins": 12
+  },
+  {
+    "id": "SOL",
+    "name": "Solaris Speed",
+    "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/SOL.png?raw=true",
+    "description": "Founded in 1975, Solaris Speed is one of the oldest and most respected teams in the championship. Known for their unmatched reliability and durable engineering, Solaris may not always be flashy, but their consistency has made them a staple in motorsport history. Their cars are built to last, and so is their legacy.",
+    "dateOfExistence": "08-23-1975",
+    "amountOfChampionships": 12,
+    "amountOfWins": 55
+  },
+  {
+    "id": "QTM",
+    "name": "Quantum Racing",
+    "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/QTM.png?raw=true",
+    "description": "Quantum Racing is known for its unpredictable performances—either stunning the world with their speed or falling victim to overambition. Since their formation in 2000, they’ve embraced a high-risk, high-reward philosophy that has led to spectacular victories and heartbreaking losses in equal measure.",
+    "dateOfExistence": "11-19-2000",
+    "amountOfChampionships": 6,
+    "amountOfWins": 33
+  },
+  {
+    "id": "ORI",
+    "name": "Orion Motorsport",
+    "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/ORI.png?raw=true",
+    "description": "Orion Motorsport has carved out a unique identity as the beloved underdogs of the racing world. Since 1983, they’ve inspired fans with their gritty determination, unexpected upsets, and connection to grassroots racing culture. While not the most decorated team, their story is one of heart, hustle, and hope.",
+    "dateOfExistence": "08-05-1983",
+    "amountOfChampionships": 7,
+    "amountOfWins": 40
+  }
+]

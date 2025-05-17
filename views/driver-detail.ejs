@@ -1,46 +1,60 @@
 <%- include("partials/header") %>
 <main class="driver-detail">
     <section class="driver-header">
-        <div class="driver-image">
+        <article class="driver-image">
             <img src="<%= driver.imageUrl %>" 
                  alt="<%= driver.name %>"
                  onerror="this.src='/images/default_driver.jpg'">
-        </div>
-        <div class="driver-info">
+        </article>
+        <article class="driver-info">
             <h1><%= driver.name %></h1>
             <div class="driver-meta">
                 <span class="driver-number">#<%= driver.driverNumber %></span>
-                <span class="nationality">
-                    <img src="/images/flags/<%= driver.nationality.toLowerCase().replace(' ', '-') %>.png" 
-                         alt="<%= driver.nationality %>">
-                    <%= driver.nationality %>
-                </span>
+                <span class="nationality"><%= driver.nationality %></span>
             </div>
-        </div>
+        </article>
     </section>
 
     <section class="driver-stats">
-        <div class="stat-card">
+        <article class="stat-card">
             <h3>Team</h3>
             <div class="team-info">
-                <img src="<%= driver.currentTeam.imageUrl %>"
-                     alt="<%= driver.currentTeam.name %>"
-                     onerror="this.src='/images/default_team.png'">
-                <span><%= driver.currentTeam.name %></span>
+                <a href="/team/<%= driver.currentTeam.id %>">
+                    <img src="<%= driver.currentTeam.imageUrl %>"
+                        alt="<%= driver.currentTeam.name %>"
+                        onerror="this.src='/images/default_team.png'">
+                </a>
+                    <span><%= driver.currentTeam.name %></span>
             </div>
-        </div>
+        </article>
 
-        <div class="stat-card">
+        <article class="stat-card">
             <h3>Status</h3>
             <p class="status <%= driver.isActive ? 'active' : 'inactive' %>">
                 <%= driver.isActive ? 'Active' : 'Inactive' %>
             </p>
-        </div>
+        </article>
 
-        <div class="stat-card">
+        <article class="stat-card">
             <h3>First Race</h3>
             <p><%= new Date(driver.firstRace).toLocaleDateString() %></p>
-        </div>
+        </article>
+
+        <article class="stat-card">
+            <h3>Age</h3>
+            <p><%= driver.age %></p>
+            <p>Birthdate: <%= new Date(driver.birthdate).toLocaleDateString() %></p>
+        </article>
+
+        <article class="stat-card">
+            <h3>Previous Teams</h3>
+            <p><%= driver.teams.join(", ") %></p>
+        </article>
+
+        <article class="stat-card">
+            <h3>Driver ID</h3>
+            <p > <%= driver.id %></p>
+        </article>
     </section>
 
     <section class="driver-bio">
@@ -48,10 +62,8 @@
         <p><%= driver.description %></p>
     </section>
 
-    <div class="back-button">
-        <a href="/drivers" class="button">
-            <i class="fas fa-arrow-left"></i> Back to Drivers
-        </a>
-    </div>
+     <a href="/drivers" class="button">
+        <i class="fas fa-arrow-left"></i> Back to Drivers
+    </a>
 </main>
 <%- include("partials/footer") %>

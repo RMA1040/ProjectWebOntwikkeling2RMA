@@ -2,7 +2,7 @@
     {
       "id": "JSM",
       "name": "Jack Simmons",
-      "description": "An aggressive driver with a no-compromise racing style.",
+      "description": "Jack Simmons is renowned for his fiercely aggressive driving and unrelenting determination on the track. Born in France, he made his professional debut in 2019 and quickly earned a reputation as a no-compromise competitor who thrives under pressure. Simmons is known for pushing both his car and rivals to their limits, often pulling off daring overtakes in high-stakes situations. Though his style sometimes courts controversy, it has also delivered electrifying performances and earned him a loyal fanbase. With experience at top teams like Titan Racing and Apex Velocity, Simmons combines raw speed with seasoned instincts, making him one of the most thrilling drivers to watch on the grid.",
       "age": 27,
       "driverNumber": 14,
       "nationality":"France",
@@ -15,7 +15,7 @@
         "id": "TIT",
         "name": "Titan Racing",
         "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/TIT.png?raw=true",
-        "description": "A legendary team known for their dominance in the early years of the championship.",
+        "description": "Titan Racing is one of the most iconic teams in racing history. Founded in 1985, they rose to dominance in the late '80s and maintained their legacy through technical innovation and unparalleled consistency. With a record number of championships and a formidable lineup of legendary drivers, they remain a powerhouse that defines what it means to be elite in motorsport.",
         "dateOfExistence": "12-05-1985",
         "amountOfChampionships": 15,
         "amountOfWins": 78
@@ -24,7 +24,7 @@
     {
       "id": "LMR",
       "name": "Liam Mercer",
-      "description": "A calculated driver known for consistency and precision.",
+      "description": "Liam Mercer has built his reputation on surgical precision and unwavering consistency behind the wheel. Hailing from France, Mercer entered the top-tier racing scene in 2020 and quickly stood out for his calm demeanor and analytical approach to every race. Unlike more aggressive peers, Mercer relies on strategic thinking, tire management, and faultless execution to gain an edge. His smooth driving style often results in clean races with minimal errors, making him a dependable asset to any team. Having raced for both Thunderstrike GP and Phoenix Dynamics, Mercer has proven adaptable across different car setups and racing conditions, earning him respect from teammates and competitors alike. Though not always in the spotlight, his methodical rise up the ranks marks him as a future championship contender.",
       "age": 25,
       "driverNumber": 7,
       "nationality":"France",
@@ -37,8 +37,8 @@
         "id": "THS",
         "name": "Thunderstrike GP",
         "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/THS.png?raw=true",
-        "description": "Known for their risky pit strategies and fearless overtaking.",
-        "dateOfExistence": "21-07-1998",
+        "description": "Thunderstrike GP embodies a fearless racing philosophy, often making headlines for daring pit stops and thrilling overtakes. Founded in 1998, their unpredictable strategies keep fans on the edge of their seats. While not always the most consistent, their highlights are unforgettable, earning them a loyal global following.",
+        "dateOfExistence": "07-21-1998",
         "amountOfChampionships": 5,
         "amountOfWins": 31
       }
@@ -46,7 +46,7 @@
     {
       "id": "AWR",
       "name": "Aaron Wright",
-      "description": "A rookie with an aggressive overtaking style.",
+      "description": "Aaron Wright is one of the most exciting young talents to enter the championship in recent years. Hailing from the United Kingdom, Wright burst onto the scene in 2022 with a fearless, aggressive overtaking style that quickly made him a fan favorite. Despite his rookie status, he races with a level of confidence and instinct that belies his age. Known for pushing his car — and his rivals — to the limit, Wright has earned a reputation for being bold, unpredictable, and relentless on track. After initial stints with Eclipse Racing, he found a strong footing with Nova Motorsport, where his raw speed and tenacity are being refined into a more strategic, championship-caliber driving style. With natural flair and a hunger to prove himself, Aaron Wright is widely regarded as a future star of the sport.",
       "age": 22,
       "driverNumber": 23,
       "nationality":"United Kingdom",
@@ -59,7 +59,7 @@
         "id": "NVA",
         "name": "Nova Motorsport",
         "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/NVA.png?raw=true",
-        "description": "A rising team with a reputation for nurturing young talent.",
+        "description": "Nova Motorsport has quickly established itself as a breeding ground for the next generation of elite drivers. Since launching in 2005, they’ve focused on development and innovation. Despite being one of the newer teams, their ability to identify and nurture raw talent has earned them industry respect and a growing trophy cabinet.",
         "dateOfExistence": "10-04-2005",
         "amountOfChampionships": 3,
         "amountOfWins": 18
@@ -68,7 +68,7 @@
     {
       "id": "DSK",
       "name": "David Skelton",
-      "description": "A veteran with experience in multiple racing disciplines.",
+      "description": "David Skelton is a seasoned veteran whose career spans over a decade and includes success in a variety of racing disciplines before cementing his legacy in the championship. Hailing from the United Kingdom, Skelton is known for his adaptability, technical precision, and calm demeanor under pressure. He began his top-tier racing journey in 2012 and quickly gained respect for his consistent performances and deep understanding of race strategy. Skelton has driven for prestigious teams like Solaris Speed, where his reliability and endurance perfectly complemented the team’s philosophy, and later joined Hyperion GP, bringing stability and leadership to their ambitious, tech-driven program. Despite the emergence of younger talents, Skelton remains fiercely competitive — a cerebral driver who can outthink as well as outrace his opponents. As one of the sport's elder statesmen, he continues to be a benchmark of professionalism and performance.",
       "age": 33,
       "driverNumber": 99,
       "nationality":"United Kingdom",
@@ -81,7 +81,7 @@
         "id": "HYP",
         "name": "Hyperion GP",
         "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/HYP.png?raw=true",
-        "description": "Backed by a major tech corporation, they invest heavily in hybrid power units.",
+        "description": "Hyperion GP is the cutting-edge face of modern racing. Backed by a leading technology corporation, they emphasize research into hybrid systems and advanced telemetry. Since their founding in 2008, they have rapidly risen through the ranks, disrupting traditional teams with their data-driven, tech-heavy approach.",
         "dateOfExistence": "05-12-2008",
         "amountOfChampionships": 2,
         "amountOfWins": 12
@@ -90,7 +90,7 @@
     {
       "id": "BFR",
       "name": "Ben Foster",
-      "description": "A young talent with impressive qualifying performances.",
+      "description": "Ben Foster is one of the most exciting young prospects in the modern racing scene. Hailing from the United States, Foster has quickly made a name for himself with blisteringly fast qualifying laps and fearless driving under pressure. Making his debut in 2023, he wasted no time in turning heads, frequently outperforming more seasoned drivers during Saturdays and earning a reputation as a one-lap specialist. Foster's aggressive yet calculated style blends natural instinct with technical finesse — a rare combination for someone so early in their career. His time at Quantum Racing highlighted his high-risk, high-reward mentality, while his current stint with Orion Motorsport has allowed him to mature into a more complete driver, balancing speed with race management. With his sharp focus, competitive edge, and rapidly growing fanbase, Ben Foster is widely considered a future championship contender.",
       "age": 21,
       "driverNumber": 88,
       "nationality":"United States of America",
@@ -103,7 +103,7 @@
         "id": "QTM",
         "name": "Quantum Racing",
         "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/QTM.png?raw=true",
-        "description": "A high-risk, high-reward team that either dominates or struggles.",
+        "description": "Quantum Racing is known for its unpredictable performances—either stunning the world with their speed or falling victim to overambition. Since their formation in 2000, they’ve embraced a high-risk, high-reward philosophy that has led to spectacular victories and heartbreaking losses in equal measure.",
         "dateOfExistence": "19-11-2000",
         "amountOfChampionships": 6,
         "amountOfWins": 33
@@ -112,7 +112,7 @@
     {
       "id": "TWN",
       "name": "Tommy Winters",
-      "description": "An unpredictable driver who thrives in wet conditions.",
+      "description": "Tommy Winters is renowned for his unpredictable yet electrifying performances, especially when the skies turn grey. Nicknamed 'The Rain Whisperer' by fans and pundits alike, Winters has built a reputation as a master of wet-weather racing, often outperforming rivals in treacherous track conditions. Originating from the Netherlands, he made his debut in 2016 and quickly proved that he could deliver under pressure, particularly when grip was scarce and visibility low. Known for his instinctive control and daring overtakes, Winters brings excitement to every race weekend. His time with Titan Racing saw him develop a more aggressive racing identity, while his current tenure with Eclipse Racing has shown his growth into a more strategic and balanced competitor. Though not always consistent, when conditions align with his strengths, Tommy Winters is almost unbeatable — a wildcard on the grid with the talent to surprise at any moment.",
       "age": 28,
       "driverNumber": 5,
       "nationality":"Netherlands",
@@ -125,7 +125,7 @@
         "id": "ECL",
         "name": "Eclipse Racing",
         "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/ECL.png?raw=true",
-        "description": "A consistent midfield team with a reputation for strategic brilliance.",
+        "description": "Eclipse Racing has long been known as the tacticians of the grid. Founded in 1995, the team has developed a reputation for clever race management, often turning unlikely situations into podium finishes. While rarely the fastest, they are almost always the smartest, making them a respected opponent in any race.",
         "dateOfExistence": "28-02-1995",
         "amountOfChampionships": 4,
         "amountOfWins": 25
@@ -134,7 +134,7 @@
     {
       "id": "MCC",
       "name": "Mark Cooper",
-      "description": "A rising star with a history in endurance racing.",
+      "description": "Mark Cooper is one of the most promising talents to emerge from the American racing scene in recent years. With a background rooted in endurance racing, Cooper brings a unique blend of stamina, strategic thinking, and mechanical sympathy to the world of single-seaters. His ability to manage tire wear, conserve fuel, and execute long-term race strategies has often given him an edge in tightly contested events. Making his professional debut in 2021, Cooper quickly gained attention for his mature driving style and calm demeanor under pressure. His time at Apex Velocity honed his raw speed, especially in qualifying, while his move to Nova Motorsport allowed him to showcase his adaptability and team-centric mindset. Still early in his career, Cooper continues to impress with a mix of consistency and flashes of brilliance, making him a key figure in the future of the sport.",
       "age": 24,
       "driverNumber": 31,
       "nationality":"United States of America",
@@ -147,7 +147,7 @@
         "id": "APX",
         "name": "Apex Velocity",
         "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/APX.png?raw=true",
-        "description": "A team focused on cutting-edge aerodynamics and aggressive race strategies.",
+        "description": "Apex Velocity has built its reputation on precision engineering, futuristic design, and an aggressive approach to racing strategy. Since their inception in 1992, they've consistently pushed the envelope of aerodynamics and performance. Known for bold overtakes and boundary-pushing tech, Apex remains a formidable contender each season.",
         "dateOfExistence": "03-09-1992",
         "amountOfChampionships": 8,
         "amountOfWins": 45
@@ -156,7 +156,7 @@
     {
       "id": "RHN",
       "name": "Ryan Henshaw",
-      "description": "A defensive driver known for his ability to hold off opponents.",
+      "description": "Ryan Henshaw is widely recognized as one of the sport’s most tenacious defensive drivers. With over a decade of racing experience, Henshaw has developed a reputation for his remarkable ability to maintain position against aggressive challengers, often using impeccable racecraft and tactical intelligence to frustrate his rivals. His style emphasizes precision and control, allowing him to expertly manage wheel-to-wheel battles while minimizing risks. Since his debut in 2015, Ryan has been a valuable asset for teams like Phoenix Dynamics and Solaris Speed, consistently delivering solid results and demonstrating leadership both on and off the track. His calm, calculated approach makes him a tough competitor in any race situation, particularly when under pressure.",
       "age": 30,
       "driverNumber": 77,
       "nationality":"United States of America",
@@ -169,7 +169,7 @@
         "id": "PXD",
         "name": "Phoenix Dynamics",
         "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/PXD.png?raw=true",
-        "description": "A historic team that has rebounded from multiple near collapses.",
+        "description": "Phoenix Dynamics is the epitome of resilience in motorsport. Established in 1979, the team has seen its share of triumphs and setbacks, rising from near extinction on more than one occasion. Their journey is a testament to persistence and passion, with a legacy of brilliant comebacks and spectacular seasons.",
         "dateOfExistence": "15-06-1979",
         "amountOfChampionships": 10,
         "amountOfWins": 62
@@ -178,7 +178,7 @@
     {
       "id": "SFT",
       "name": "Samuel Fletcher",
-      "description": "A former karting champion with high expectations.",
+      "description": "Samuel Fletcher, a former karting champion, has quickly made a name for himself in the professional racing world with his exceptional talent and determination. Transitioning smoothly from karting to high-speed circuit racing, Fletcher has demonstrated an impressive blend of raw speed and tactical awareness. Known for his adaptability and rapid learning curve, he carries high expectations from fans and teams alike. Since his debut in 2022, Samuel has showcased a fearless racing style paired with a keen sense for overtaking, making him one of the most exciting young drivers on the grid. His association with teams like Hyperion GP and Thunderstrike GP highlights his rising trajectory in the motorsport scene, as he continues to develop and chase his dream of championship glory.",
       "age": 23,
       "driverNumber": 15,
       "nationality":"United Kingdom",
@@ -191,7 +191,7 @@
         "id": "THS",
         "name": "Thunderstrike GP",
         "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/THS.png?raw=true",
-        "description": "Known for their risky pit strategies and fearless overtaking.",
+        "description": "Thunderstrike GP embodies a fearless racing philosophy, often making headlines for daring pit stops and thrilling overtakes. Founded in 1998, their unpredictable strategies keep fans on the edge of their seats. While not always the most consistent, their highlights are unforgettable, earning them a loyal global following.",
         "dateOfExistence": "21-07-1998",
         "amountOfChampionships": 5,
         "amountOfWins": 31
@@ -200,7 +200,7 @@
     {
       "id": "OHL",
       "name": "Oscar Holland",
-      "description": "An aggressive driver with a reputation for daring moves.",
+      "description": "Oscar Holland is known across the circuit for his aggressive driving style and fearless approach to racing. With a reputation for executing daring overtakes and pushing the limits of his car, Holland consistently excites fans and keeps competitors on their toes. Since making his debut in 2019, he has proven himself as a driver who thrives under pressure and never backs down from a challenge. His time with Eclipse Racing and Orion Motorsport has further sharpened his skills, allowing him to blend raw aggression with strategic racecraft. Holland’s determination and passion make him a formidable competitor, always aiming to climb higher on the podium and secure his place among the sport’s elite.",
       "age": 26,
       "driverNumber": 3,
       "nationality":"Australia",
@@ -213,7 +213,7 @@
         "id": "ORI",
         "name": "Orion Motorsport",
         "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/ORI.png?raw=true",
-        "description": "A fan-favorite team with an underdog spirit and passionate supporters.",
+        "description": "Orion Motorsport has carved out a unique identity as the beloved underdogs of the racing world. Since 1983, they’ve inspired fans with their gritty determination, unexpected upsets, and connection to grassroots racing culture. While not the most decorated team, their story is one of heart, hustle, and hope.",
         "dateOfExistence": "08-05-1983",
         "amountOfChampionships": 7,
         "amountOfWins": 40
@@ -222,7 +222,7 @@
     {
       "id": "GMB",
       "name": "Gavin McBride",
-      "description": "A smooth driver who excels in tire management.",
+      "description": "Gavin McBride is renowned for his smooth and calculated driving style, which allows him to excel in tire management and race strategy. His ability to conserve tire life while maintaining competitive lap times makes him a valuable asset for his teams, often enabling strong finishes even in challenging conditions. Since his debut in 2017, McBride has steadily developed into a reliable and consistent performer, demonstrating great skill in adapting to changing race dynamics. Driving for both Titan Racing and Quantum Racing, he blends experience with tactical intelligence, frequently outsmarting rivals in the closing stages of races. McBride's calm demeanor and precise control behind the wheel have earned him respect within the paddock and among fans alike.",
       "age": 29,
       "driverNumber": 66,
       "nationality":"United States of America",
@@ -235,7 +235,7 @@
         "id": "QTM",
         "name": "Quantum Racing",
         "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/QTM.png?raw=true",
-        "description": "A high-risk, high-reward team that either dominates or struggles.",
+        "description": "Quantum Racing is known for its unpredictable performances—either stunning the world with their speed or falling victim to overambition. Since their formation in 2000, they’ve embraced a high-risk, high-reward philosophy that has led to spectacular victories and heartbreaking losses in equal measure.",
         "dateOfExistence": "19-11-2000",
         "amountOfChampionships": 6,
         "amountOfWins": 33
@@ -244,7 +244,7 @@
     {
       "id": "JRH",
       "name": "Jordan Hart",
-      "description": "A late bloomer who has shocked the racing world.",
+      "description": "Jordan Hart is a remarkable late bloomer in the racing scene, having shocked the racing world with his rapid rise and impressive performances after entering the sport later than most. Known for his relentless determination and mental toughness, Hart has turned heads by consistently outperforming expectations and steadily climbing the ranks. His ability to remain composed under pressure and adapt quickly to different cars and circuits has made him a formidable competitor. Since his debut in 2014, Jordan has forged strong ties with teams like Nova Motorsport and Apex Velocity, where his experience and maturity provide valuable insight and leadership both on and off the track. His journey is a testament to perseverance and passion, inspiring many aspiring drivers who take unconventional paths.",
       "age": 31,
       "driverNumber": 12,
       "nationality":"South Africa",
@@ -257,7 +257,7 @@
         "id": "NVA",
         "name": "Nova Motorsport",
         "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/NVA.png?raw=true",
-        "description": "A rising team with a reputation for nurturing young talent.",
+        "description": "Nova Motorsport has quickly established itself as a breeding ground for the next generation of elite drivers. Since launching in 2005, they’ve focused on development and innovation. Despite being one of the newer teams, their ability to identify and nurture raw talent has earned them industry respect and a growing trophy cabinet.",
         "dateOfExistence": "10-04-2005",
         "amountOfChampionships": 3,
         "amountOfWins": 18
@@ -266,7 +266,7 @@
     {
       "id": "WGR",
       "name": "Will Grant",
-      "description": "A fan-favorite with an aggressive but fair racing style.",
+      "description": "Will Grant is a beloved fan-favorite known for his aggressive yet fair racing style that excites crowds and earns the respect of his peers. Since his debut in 2018, Will has built a reputation for fearless overtakes and smart racecraft, combining raw speed with tactical intelligence. His ability to push the limits while maintaining clean racing has made him a standout competitor, especially in high-pressure situations. Representing teams like Thunderstrike GP and Phoenix Dynamics, Will brings energy and passion to every race weekend. Off the track, he is known for engaging with fans and contributing to community initiatives, further solidifying his popularity both on and off the circuit.",
       "age": 27,
       "driverNumber": 8,
       "nationality":"South Africa",
@@ -279,7 +279,7 @@
         "id": "THS",
         "name": "Thunderstrike GP",
         "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/THS.png?raw=true",
-        "description": "Known for their risky pit strategies and fearless overtaking.",
+        "description": "Thunderstrike GP embodies a fearless racing philosophy, often making headlines for daring pit stops and thrilling overtakes. Founded in 1998, their unpredictable strategies keep fans on the edge of their seats. While not always the most consistent, their highlights are unforgettable, earning them a loyal global following.",
         "dateOfExistence": "21-07-1998",
         "amountOfChampionships": 5,
         "amountOfWins": 31
@@ -288,7 +288,7 @@
     {
       "id": "DLN",
       "name": "Dylan Norton",
-      "description": "A consistent driver with great adaptability.",
+      "description": "Dylan Norton is a highly consistent and adaptable driver, known for his ability to perform reliably across a wide variety of track conditions and race scenarios. Since his debut in 2017, Dylan has demonstrated a steady progression, combining technical skill with strategic thinking. His calm demeanor under pressure allows him to manage races with precision, making the most of every opportunity while minimizing risks. Racing for teams like Hyperion GP and Solaris Speed, he is valued for his feedback and teamwork, helping to develop the car throughout the season. Off the track, Dylan is respected for his professionalism and dedication to fitness, always pushing to improve both himself and his machinery.",
       "age": 28,
       "driverNumber": 55,
       "nationality":"Belgium",
@@ -301,7 +301,7 @@
         "id": "SOL",
         "name": "Solaris Speed",
         "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/SOL.png?raw=true",
-        "description": "One of the oldest teams, known for their endurance and reliability.",
+        "description": "Founded in 1975, Solaris Speed is one of the oldest and most respected teams in the championship. Known for their unmatched reliability and durable engineering, Solaris may not always be flashy, but their consistency has made them a staple in motorsport history. Their cars are built to last, and so is their legacy.",
         "dateOfExistence": "23-08-1975",
         "amountOfChampionships": 12,
         "amountOfWins": 55
@@ -310,7 +310,7 @@
     {
       "id": "RCL",
       "name": "Ricky Lowe",
-      "description": "A bold driver who always pushes the limits.",
+      "description": "Ricky Lowe is known for his fearless and bold approach on the track, constantly pushing the boundaries to extract every ounce of performance from his car. Since his debut in 2021, he has quickly gained a reputation for his aggressive driving style combined with a sharp racecraft that often surprises his competitors. Racing for Eclipse Racing and Orion Motorsport, Ricky thrives in high-pressure situations and is never afraid to take calculated risks, making him a formidable presence during wheel-to-wheel battles. Off the circuit, he is committed to refining his skills through rigorous training and data analysis, aiming to climb steadily up the ranks and become a consistent front-runner.",
       "age": 25,
       "driverNumber": 21,
       "nationality":"Indonesia",
@@ -323,7 +323,7 @@
         "id": "ECL",
         "name": "Eclipse Racing",
         "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/ECL.png?raw=true",
-        "description": "A consistent midfield team with a reputation for strategic brilliance.",
+        "description": "Eclipse Racing has long been known as the tacticians of the grid. Founded in 1995, the team has developed a reputation for clever race management, often turning unlikely situations into podium finishes. While rarely the fastest, they are almost always the smartest, making them a respected opponent in any race.",
         "dateOfExistence": "28-02-1995",
         "amountOfChampionships": 4,
         "amountOfWins": 25
@@ -332,7 +332,7 @@
     {
         "id": "NMC",
         "name": "Nathan McAllister",
-        "description": "A young hotshot with a fearless approach to racing.",
+        "description": "Nathan McAllister is a young and dynamic talent who has quickly made a name for himself with his fearless approach to racing. Debuting in 2021, Nathan combines raw speed with an instinctive ability to take on challenging situations without hesitation. Racing for top teams like Titan Racing and Apex Velocity, he’s known for his aggressive overtakes and sharp racecraft that often catch rivals off guard. Despite his youth, Nathan shows maturity beyond his years in managing race pressure and adapting to evolving track conditions. His dedication to constant improvement and natural flair for the sport make him one of the most exciting drivers to watch in the current generation.",
         "age": 24,
         "driverNumber": 44,
         "nationality":"United States of America",
@@ -345,7 +345,7 @@
           "id": "APX",
           "name": "Apex Velocity",
           "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/APX.png?raw=true",
-          "description": "A team focused on cutting-edge aerodynamics and aggressive race strategies.",
+          "description": "Apex Velocity has built its reputation on precision engineering, futuristic design, and an aggressive approach to racing strategy. Since their inception in 1992, they've consistently pushed the envelope of aerodynamics and performance. Known for bold overtakes and boundary-pushing tech, Apex remains a formidable contender each season.",
           "dateOfExistence": "03-09-1992",
           "amountOfChampionships": 8,
           "amountOfWins": 45
@@ -354,7 +354,7 @@
       {
         "id": "ETH",
         "name": "Ethan Hughes",
-        "description": "An analytical driver known for strategic racecraft.",
+        "description": "Ethan Hughes is a highly analytical driver renowned for his exceptional strategic racecraft. Since his debut in 2017, Ethan has impressed teams and fans alike with his ability to carefully plan and execute race strategies that maximize tire life, fuel efficiency, and timing of pit stops. Racing with teams like Thunderstrike GP and Hyperion GP, he combines calm decision-making with precise driving skills, often turning tough races into points-scoring finishes. His methodical approach and sharp understanding of race dynamics make him a formidable competitor who excels under pressure and adapts quickly to changing race conditions.",
         "age": 29,
         "driverNumber": 27,
         "nationality":"South Africa",
@@ -367,7 +367,7 @@
           "id": "HYP",
           "name": "Hyperion GP",
           "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/HYP.png?raw=true",
-          "description": "Backed by a major tech corporation, they invest heavily in hybrid power units.",
+          "description": "Hyperion GP is the cutting-edge face of modern racing. Backed by a leading technology corporation, they emphasize research into hybrid systems and advanced telemetry. Since their founding in 2008, they have rapidly risen through the ranks, disrupting traditional teams with their data-driven, tech-heavy approach.",
           "dateOfExistence": "05-12-2008",
           "amountOfChampionships": 2,
           "amountOfWins": 12
@@ -376,7 +376,7 @@
       {
         "id": "KVL",
         "name": "Kai Varela",
-        "description": "A former rally champion bringing aggressive cornering skills.",
+        "description": "Kai Varela, a former rally champion, has successfully transitioned to circuit racing, bringing with him an aggressive and highly skilled approach to cornering. Known for his fearless style and precision, Kai leverages his rally experience to master challenging tracks and unpredictable conditions. Since his first race in 2020, he has quickly gained recognition for his ability to push limits while maintaining control, often gaining crucial time through daring overtakes in tight corners. Racing for teams like Nova Motorsport and Phoenix Dynamics, Kai’s adaptability and raw pace make him a rising star to watch in the championship.",
         "age": 26,
         "driverNumber": 19,
         "nationality":"Italy",
@@ -389,7 +389,7 @@
           "id": "PXD",
           "name": "Phoenix Dynamics",
           "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/PXD.png?raw=true",
-          "description": "A historic team that has rebounded from multiple near collapses.",
+          "description": "Phoenix Dynamics is the epitome of resilience in motorsport. Established in 1979, the team has seen its share of triumphs and setbacks, rising from near extinction on more than one occasion. Their journey is a testament to persistence and passion, with a legacy of brilliant comebacks and spectacular seasons.",
           "dateOfExistence": "15-06-1979",
           "amountOfChampionships": 10,
           "amountOfWins": 62
@@ -398,7 +398,7 @@
       {
         "id": "BLD",
         "name": "Brandon Lloyd",
-        "description": "A highly experienced driver who excels under pressure.",
+        "description": "Brandon Lloyd is a seasoned racing driver from New Zealand, known for his calm demeanor and exceptional performance in high-pressure situations. With over a decade of experience since his debut in 2013, Brandon combines technical skill with racecraft intelligence, often making crucial decisions that turn tight races in his favor. His ability to stay composed during intense battles and maintain consistency over long stints has earned him respect from teammates and rivals alike. Racing for teams like Solaris Speed and Quantum Racing, Brandon continues to be a reliable and formidable competitor on the grid.",
         "age": 32,
         "driverNumber": 9,
         "nationality":"New Zealand",
@@ -411,7 +411,7 @@
           "id": "SOL",
           "name": "Solaris Speed",
           "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/SOL.png?raw=true",
-          "description": "One of the oldest teams, known for their endurance and reliability.",
+          "description": "Founded in 1975, Solaris Speed is one of the oldest and most respected teams in the championship. Known for their unmatched reliability and durable engineering, Solaris may not always be flashy, but their consistency has made them a staple in motorsport history. Their cars are built to last, and so is their legacy.",
           "dateOfExistence": "23-08-1975",
           "amountOfChampionships": 12,
           "amountOfWins": 55
@@ -420,7 +420,7 @@
       {
         "id": "XAV",
         "name": "Xavier Montoya",
-        "description": "A fan-favorite known for his fearless overtakes.",
+        "description": "Xavier Montoya is a rising star from Argentina, quickly gaining a reputation as a fan-favorite thanks to his daring and fearless overtaking maneuvers. Since his debut in 2022, he has impressed audiences with his aggressive yet calculated driving style, often making bold moves that electrify races. Known for his natural racing instincts and ability to read track conditions perfectly, Xavier brings excitement and unpredictability to every event. Racing for Eclipse Racing and Orion Motorsport, he continues to develop his skills while captivating motorsport enthusiasts worldwide.",
         "age": 23,
         "driverNumber": 16,
         "nationality":"Argentina",
@@ -433,7 +433,7 @@
           "id": "ORI",
           "name": "Orion Motorsport",
           "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/ORI.png?raw=true",
-          "description": "A fan-favorite team with an underdog spirit and passionate supporters.",
+          "description": "Orion Motorsport has carved out a unique identity as the beloved underdogs of the racing world. Since 1983, they’ve inspired fans with their gritty determination, unexpected upsets, and connection to grassroots racing culture. While not the most decorated team, their story is one of heart, hustle, and hope.",
           "dateOfExistence": "08-05-1983",
           "amountOfChampionships": 7,
           "amountOfWins": 40

@@ -43,6 +43,8 @@ app.get("/drivers", (req, res) => {
             return sortDirection === "asc" ? a.driverNumber - b.driverNumber : b.driverNumber - a.driverNumber;
         } else if (sortField === "nationality") {
             return sortDirection === "asc" ? a.nationality.localeCompare(b.nationality) : b.nationality.localeCompare(a.nationality);
+        } else if (sortField === "isActive") {
+            return sortDirection === "asc" ? Number(a.isActive) - Number(b.isActive) : Number(b.isActive) - Number(a.isActive);
         } else {
             return 0;
         }
