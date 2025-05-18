@@ -1,0 +1,16 @@
+<%- include("partials/header") %>
+<h1>Edit Team</h1>
+<form action="/team/<%= team.id %>/edit" method="POST">
+  <label for="name">Team Name:</label>
+  <input type="text" name="name" id="name" value="<%= team.name %>" required>
+
+  <label for="amountOfChampionships">Championships:</label>
+  <input type="number" name="amountOfChampionships" id="amountOfChampionships" value="<%= team.amountOfChampionships %>" required>
+
+  <label for="amountOfWins">Total Wins:</label>
+  <input type="number" name="amountOfWins" id="amountOfWins" value="<%= team.amountOfWins %>" required>
+
+  <button type="submit">Save</button>
+</form>
+
+<%- include("partials/footer") %>

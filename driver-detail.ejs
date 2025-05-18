@@ -1,0 +1,21 @@
+<%- include("partials/header") %>
+<h1>Edit Driver</h1>
+<form action="/driver/<%= driver.id %>/edit" method="POST">
+  <label for="name">Name:</label>
+  <input type="text" name="name" id="name" value="<%= driver.name %>" required>
+
+  <label for="nationality">Nationality:</label>
+  <input type="text" name="nationality" id="nationality" value="<%= driver.nationality %>" required>
+
+  <label for="driverNumber">Driver Number:</label>
+  <input type="number" name="driverNumber" id="driverNumber" value="<%= driver.driverNumber %>" required>
+
+  <label for="raceWins">Race Wins:</label>
+  <input type="number" name="raceWins" id="raceWins" value="<%= driver.raceWins %>" required>
+
+  <label for="isActive">Active:</label>
+  <input type="checkbox" name="isActive" id="isActive" <%= driver.isActive ? 'checked' : '' %>>
+
+  <button type="submit">Save</button>
+</form>
+<%- include("partials/footer") %>

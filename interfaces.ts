@@ -25,3 +25,9 @@ export interface Team{
     amountOfChampionships:number;
     amountOfWins:number;
 }
+
+export interface User {
+    email: string;
+    password?: string;
+    role: 'ADMIN' | 'USER';
+}

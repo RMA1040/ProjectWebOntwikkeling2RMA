@@ -1,140 +1,207 @@
 import express from "express";
-import { Driver, Team } from "./interfaces";
+import path from "path";
+import fs from "fs";
+import { Driver, Team, User } from "./interfaces";
 import driver from "./driver.json";
 import team from "./team.json";
-import fs from "fs";
-import path from "path";
+import {connectDb,initializeData,getDrivers,getTeams,getDriverById,getTeamById,getDriversByTeamId,updateDriver,updateTeam,login} from "./database";
+import dotenv from "dotenv";
+import session from "./session";
+import { secureMiddleware } from "./secureMiddleware";
+
+dotenv.config();
 
 const app = express();
 
-app.use(express.static('public'));
-app.set("view engine", "ejs");
 app.set("port", 3000);
+app.set("view engine", "ejs");
+app.use(express.static("public"));
+app.use(session);
 
-const drivers: Driver[] = driver;
-const teams: Team[] = team;
+console.log(process.env.PORT);
+console.log(process.env.MONGO_URI)
+app.set("port", process.env.PORT || 3000);
 
-// Helper function to find local images
+// Helper function to find local images (optioneel, blijft hetzelfde)
 function getLocalImagePath(basePath: string): string | null {
-    const extensions = ['.jpg', '.png', '.jpeg', '.webp'];
-    for (const ext of extensions) {
-        const imagePath = path.join(__dirname, 'public', 'images', `${basePath}${ext}`);
-        if (fs.existsSync(imagePath)) {
-            return `/images/${basePath}${ext}`;
-        }
+  const extensions = [".jpg", ".png", ".jpeg", ".webp"];
+  for (const ext of extensions) {
+    const imagePath = path.join(__dirname, "public", "images", `${basePath}${ext}`);
+    if (fs.existsSync(imagePath)) {
+      return `/images/${basePath}${ext}`;
     }
-    return null;
+  }
+  return null;
 }
 
-// Driver route
-app.get("/drivers", (req, res) => {
-    // searching
-    const q = typeof req.query.q === "string" ? req.query.q.toLowerCase() : "";
-    let filteredDrivers = drivers.filter((driver) => {
-        return driver.name.toLowerCase().startsWith(q);
-    });
-    // sorting
-    const sortField = typeof req.query.sortField === "string" ? req.query.sortField : "name";
-    const sortDirection = typeof req.query.sortDirection === "string" ? req.query.sortDirection : "asc";
-     let sortedDrivers = filteredDrivers.sort((a, b) => {
-        if (sortField === "name") {
-            return sortDirection === "asc" ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name);
-        } else if (sortField === "driverNumber") {
-            return sortDirection === "asc" ? a.driverNumber - b.driverNumber : b.driverNumber - a.driverNumber;
-        } else if (sortField === "nationality") {
-            return sortDirection === "asc" ? a.nationality.localeCompare(b.nationality) : b.nationality.localeCompare(a.nationality);
-        } else if (sortField === "raceWins"){
-            return sortDirection === "asc" ? a.raceWins - b.raceWins : b.raceWins - a.raceWins;
-        } else if (sortField === "isActive") {
-            return sortDirection === "asc" ? Number(a.isActive) - Number(b.isActive) : Number(b.isActive) - Number(a.isActive);
-        } else {
-            return 0;
-        }
-    });
-    res.render("drivers", {
-        drivers: sortedDrivers,
-        teams: teams,
-        q: q,
-        sortField: sortField,
-        sortDirection: sortDirection
-    });
-});
+async function startServer() {
+  // 1. Maak connectie met database en initialiseer data als nodig
+  await connectDb();
+  await initializeData(driver, team);
+
+  // 2. Routes
+  
+  // Login route
+  app.get("/login", (req, res) => {
+    res.render("login");
+  });
 
 // Home route
-app.get("/", (req, res) => {
-    res.render("index", {
-        drivers: drivers,
-        teams: teams
-    });
+app.get("/", async (req, res) => {
+  if (!req.session.user) {
+    return res.redirect("/login");
+  }
+
+  const drivers = await getDrivers();
+  const teams = await getTeams();
+
+  res.render("index", {
+    drivers,
+    teams,
+    user: req.session.user
+  });
 });
 
-// Teams route
-app.get("/teams", (req, res) => {
-    // searching
-    let q : string = typeof req.query.q === "string" ? req.query.q : "";
-    let filteredTeams = teams.filter((team) => {
-        return team.name.toLowerCase().startsWith(q);
-    });
-    // sorting
+
+  // Drivers route
+  app.get("/drivers", async (req, res) => {
+    const q = typeof req.query.q === "string" ? req.query.q.toLowerCase() : "";
     const sortField = typeof req.query.sortField === "string" ? req.query.sortField : "name";
     const sortDirection = typeof req.query.sortDirection === "string" ? req.query.sortDirection : "asc";
-        let sortedTeams = filteredTeams.sort((a, b) => {
-        if (sortField === "name") {
-            return sortDirection === "asc" ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name);
-        } else if (sortField === "amountOfChampionships") {
-            return sortDirection === "asc" ? a.amountOfChampionships - b.amountOfChampionships : b.amountOfChampionships - a.amountOfChampionships;
-        } else if (sortField ==="amountOfWins") {
-            return sortDirection === "asc" ? a.amountOfWins - b.amountOfWins : b.amountOfWins - a.amountOfWins;
-        }
-        else {
-            return 0;
-        }
+
+    // MongoDB filter en sort objecten bouwen
+    const filter = q ? { name: { $regex: `^${q}`, $options: "i" } } : {};
+    const sort: any = {};
+    sort[sortField] = sortDirection === "asc" ? 1 : -1;
+
+    let drivers = await getDrivers(filter, sort);
+
+    res.render("drivers", {
+      drivers,
+      teams: await getTeams(),
+      q,
+      sortField,
+      sortDirection,
     });
+  });
+
+  // Teams route
+  app.get("/teams", async (req, res) => {
+    const q = typeof req.query.q === "string" ? req.query.q.toLowerCase() : "";
+    const sortField = typeof req.query.sortField === "string" ? req.query.sortField : "name";
+    const sortDirection = typeof req.query.sortDirection === "string" ? req.query.sortDirection : "asc";
+
+    const filter = q ? { name: { $regex: `^${q}`, $options: "i" } } : {};
+    const sort: any = {};
+    sort[sortField] = sortDirection === "asc" ? 1 : -1;
+
+    const teams = await getTeams(filter, sort);
+
     res.render("teams", {
-        teams: sortedTeams,
-        drivers : drivers,
-        q: q,
-        sortField: sortField,
-        sortDirection: sortDirection
+      teams,
+      drivers: await getDrivers(),
+      q,
+      sortField,
+      sortDirection,
     });
-});
+  });
 
-// driver detail route
-app.get('/driver/:id', (req, res) => {
+  // Driver detail
+  app.get("/driver/:id", async (req, res) => {
     const driverId = req.params.id;
-    const driver = drivers.find(d => d.id === driverId);
-    
+    const driver = await getDriverById(driverId);
+
     if (!driver) {
-        return res.status(404).render('error', { 
-            message: 'Driver not found' 
-        });
+      return res.status(404).render("error", { message: "Driver not found" });
     }
 
-    res.render('driver-detail', { 
-        driver: driver,
-        teams: teams 
+    res.render("driver-detail", {
+      driver,
+      teams: await getTeams(),
     });
+  });
+  // Edit formulier tonen driver
+  app.get('/driver/:id/edit', async (req, res) => {
+  const driverId = req.params.id;
+  const driver = await getDriverById(driverId);
+  if (!driver) {
+    return res.status(404).render('error', { message: 'Driver not found' });
+  }
+  res.render('driver-edit', { driver });
 });
 
-// Route for team details
-app.get('/team/:id', (req, res) => {
+// Verwerking van de edit (POST)
+app.post('/driver/:id/edit', async (req, res) => {
+  const driverId = req.params.id;
+  const updatedData = {
+    name: req.body.name,
+    nationality: req.body.nationality,
+    driverNumber: Number(req.body.driverNumber),
+    raceWins: Number(req.body.raceWins),
+    isActive: req.body.isActive === "on",  // checkbox verwerking
+    // Voeg hier andere velden toe die je wilt aanpassen
+  };
+
+  try {
+    await updateDriver(driverId, updatedData);
+    res.redirect(`/driver/${driverId}`);  // Na updaten terug naar detailpagina
+    } catch (error) {
+    res.status(500).render('error', { message: 'Failed to update driver' });
+    }
+    });
+
+  // Team detail
+  app.get("/team/:id", async (req, res) => {
     const teamId = req.params.id;
-    const team = teams.find(t => t.id === teamId);
-    const teamDrivers = drivers.filter(d => d.currentTeam.id === teamId);
-    
+    const team = await getTeamById(teamId);
+    const teamDrivers = await getDriversByTeamId(teamId);
+
     if (!team) {
-        return res.status(404).render('error', { 
-            message: 'Team not found' 
-        });
+      return res.status(404).render("error", { message: "Team not found" });
     }
 
-    res.render('team-detail', { 
-        team: team,
-        drivers: teamDrivers,
-        allDrivers: drivers
+    res.render("team-detail", {
+      team,
+      drivers: teamDrivers,
+      allDrivers: await getDrivers(),
     });
-});
+  });
+  // Edit formulier tonen voor een team
+    app.get('/team/:id/edit', async (req, res) => {
+        const teamId = req.params.id;
+        const team = await getTeamById(teamId);
 
-app.listen(app.get("port"), () => {
+        if (!team) {
+            return res.status(404).render('error', { message: 'Team not found' });
+        }
+
+        res.render('team-edit', { team });
+    });
+
+    // Verwerking van het editformulier (POST)
+    app.post('/team/:id/edit', async (req, res) => {
+        const teamId = req.params.id;
+
+        const updatedTeam = {
+            name: req.body.name,
+            amountOfChampionships: Number(req.body.amountOfChampionships),
+            amountOfWins: Number(req.body.amountOfWins)
+            // Voeg extra velden toe als nodig
+        };
+
+        try {
+            await updateTeam(teamId, updatedTeam);
+            res.redirect(`/team/${teamId}`);
+        } catch (error) {
+            res.status(500).render('error', { message: 'Failed to update team' });
+        }
+    });
+
+
+  // Server starten
+  app.listen(app.get("port"), () => {
     console.log(`[server] http://localhost:${app.get("port")}`);
-});
+  });
+}
+
+startServer();

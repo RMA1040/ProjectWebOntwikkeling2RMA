@@ -1,0 +1,20 @@
+<%- include("partials/header") %>
+<head>
+    <title>Login</title>
+</head>
+<main>
+  <section>
+    <h1>Login</h1>
+    <form method="POST" action="/login">
+      <label for="email">Email:</label>
+      <input id="email" name="email" type="text" required />
+      <br/>
+      <label for="password">Password:</label>
+      <input id="password" name="password" type="password" required />
+      <br/>
+      <button type="submit">Login</button>
+    </form>
+  </section>
+  <img src="https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/IRC-index.png?raw=true" alt="IRC headliner" height="100%" width="100%">
+</main>
+<%- include("partials/footer") %>
