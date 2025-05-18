@@ -66,8 +66,10 @@
         <h2>Biography</h2>
         <p><%= driver.description %></p>
     </section>
-
-     <a href="/drivers" class="button">
+    <a href="/driver/<%= driver.id %>/edit" class="button edit-button">
+        <i class="fas fa-edit"></i> Edit Driver
+    </a>
+    <a href="/drivers" class="button">
         <i class="fas fa-arrow-left"></i> Back to Drivers
     </a>
 </main>
