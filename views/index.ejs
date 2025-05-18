@@ -1,19 +1,25 @@
 <%- include("partials/header") %>
 <main>
     <section>
-        <h1>Racing League Dashboard</h1>
+        <h1>Intercontinental Racing Championship</h1>
+        <img src="/public/images/IRC-index.png" alt="IRC headliner">
+        <p>
+            The Intercontinental Racing Championship (IRC) is the pinnacle of global motorsport competition, uniting elite drivers and world-renowned teams from every corner of the planet. Established to push the limits of speed, skill, and strategy, the IRC is more than just a racing series — it's a showcase of human ambition and engineering excellence.
+            With circuits spanning multiple continents and climates, the IRC challenges competitors across a diverse range of conditions — from high-speed street races in iconic cities to technically demanding grand prix circuits. The championship celebrates both veteran legends and rising stars, making it a battleground where experience meets raw talent.
+            At the heart of the IRC lies a commitment to innovation, fierce competition, and international unity through sport. Each race is a high-stakes spectacle of precision, adrenaline, and passion — earning the IRC its place as the world’s premier motorsport league.
+        </p>
     </section>
     <section class="grid">
         <a href="/drivers">
             <article>
-                <h3>Driver Statistics</h3>
+                <h3>Drivers</h3>
                 <p>Total Drivers: <%= drivers.length %></p>
                 <p>Active Drivers: <%= drivers.filter(d => d.isActive).length %></p>
             </article>
         </a>
         <a href="/teams">
             <article>
-                <h3>Team Statistics</h3>
+                <h3>Teams</h3>
                 <p>Total Teams: <%= teams.length %></p>
                 <p>Total Championships: <%= teams.reduce((sum, team) => sum + team.amountOfChampionships, 0) %></p>
             </article>

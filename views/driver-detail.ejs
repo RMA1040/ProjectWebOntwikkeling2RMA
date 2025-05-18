@@ -6,6 +6,11 @@
                  alt="<%= driver.name %>"
                  onerror="this.src='/images/default_driver.jpg'">
         </article>
+        <article class="driver-image">
+            <img src="<%= driver.currentTeam.imageUrl %>" 
+                 alt="<%= driver.currentTeam.name %>"
+                 onerror="this.src='/images/default_driver.jpg'">
+        </article>
         <article class="driver-info">
             <h1><%= driver.name %></h1>
             <div class="driver-meta">
@@ -52,8 +57,8 @@
         </article>
 
         <article class="stat-card">
-            <h3>Driver ID</h3>
-            <p > <%= driver.id %></p>
+            <h3>Race Wins</h3>
+            <p > <%= driver.raceWins %></p>
         </article>
     </section>
 

@@ -52,8 +52,8 @@ h3 {
 /* Navigation */
 nav {
     background-color: #2c3e50;
-    padding: 1rem;
-    margin-bottom: 2rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 nav a {
@@ -71,6 +71,15 @@ nav a:hover {
 ul{
     list-style: none;
 }
+.horizontal-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+    overflow-x: auto;
+    padding: 1rem 0;
+}
+
 /* Tables */
 table {
     width: 100%;
@@ -113,16 +122,14 @@ tr:hover {
 .driver-header {
     display: flex;
     gap: 2rem;
-    align-items: center;
     margin-bottom: 2rem;
 }
 
 .driver-image img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    width: 190px;
+    height: 190px;
     object-fit: cover;
-    border: 3px solid #f1c40f;
+
 }
 
 .driver-info h1 {
@@ -147,11 +154,6 @@ tr:hover {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-}
-
-.nationality img {
-    width: 24px;
-    height: auto;
 }
 
 .driver-stats {
@@ -432,6 +434,10 @@ footer {
     text-align: center;
     padding: 1.5rem;
     margin-top: 2rem;
+}
+
+footer a{
+    text-decoration: none;
 }
 
 /* Responsive Design */

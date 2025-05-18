@@ -11,6 +11,7 @@ export interface Driver{
     isActive:boolean;
     birthdate:string; // of toch  "Date"?
     firstRace:string; // of toch  "Date"?
+    raceWins:number;
     teams:string[];
     currentTeam:Team;
 }

@@ -9,6 +9,7 @@
       "isActive": true,
       "birthdate": "1997-08-03",
       "firstRace": "2019-04-12",
+      "raceWins": 4,
       "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/JSM.jpg?raw=true",
       "teams": ["Titan Racing", "Apex Velocity"],
       "currentTeam":{
@@ -31,6 +32,7 @@
       "isActive": true,
       "birthdate": "1999-05-22",
       "firstRace": "2020-03-15",
+      "raceWins": 2,
       "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/LMR.jpg?raw=true",
       "teams": ["Thunderstrike GP", "Phoenix Dynamics"],
       "currentTeam": {
@@ -53,6 +55,7 @@
       "isActive": true,
       "birthdate": "2002-09-14",
       "firstRace": "2022-06-05",
+      "raceWins": 0,
       "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/AWR.jpg?raw=true",
       "teams": ["Nova Motorsport", "Eclipse Racing"],
       "currentTeam": {
@@ -75,6 +78,7 @@
       "isActive": true,
       "birthdate": "1991-12-11",
       "firstRace": "2012-03-23",
+      "raceWins": 9,
       "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/DSK.jpg?raw=true",
       "teams": ["Hyperion GP", "Solaris Speed"],
       "currentTeam": {
@@ -97,6 +101,7 @@
       "isActive": true,
       "birthdate": "2003-07-30",
       "firstRace": "2023-07-01",
+      "raceWins": 10,
       "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/BFR.jpg?raw=true",
       "teams": ["Quantum Racing", "Orion Motorsport"],
       "currentTeam": {
@@ -119,6 +124,7 @@
       "isActive": true,
       "birthdate": "1996-06-07",
       "firstRace": "2016-05-11",
+      "raceWins": 6,
       "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/TWN.jpg?raw=true",
       "teams": ["Titan Racing", "Eclipse Racing"],
       "currentTeam": {
@@ -141,6 +147,7 @@
       "isActive": true,
       "birthdate": "2000-02-19",
       "firstRace": "2021-08-03",
+      "raceWins": 27,
       "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/MCC.jpg?raw=true",
       "teams": ["Apex Velocity", "Nova Motorsport"],
       "currentTeam": {
@@ -163,6 +170,7 @@
       "isActive": true,
       "birthdate": "1994-04-05",
       "firstRace": "2015-09-09",
+      "raceWins": 14,
       "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/RHN.jpg?raw=true",
       "teams": ["Phoenix Dynamics", "Solaris Speed"],
       "currentTeam": {
@@ -185,6 +193,7 @@
       "isActive": true,
       "birthdate": "2001-11-12",
       "firstRace": "2022-06-04",
+      "raceWins": 1,
       "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/SFT.jpg?raw=true",
       "teams": ["Hyperion GP", "Thunderstrike GP"],
       "currentTeam": {
@@ -207,6 +216,7 @@
       "isActive": true,
       "birthdate": "1998-01-09",
       "firstRace": "2019-03-17",
+      "raceWins": 9,
       "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/OHL.jpg?raw=true",
       "teams": ["Eclipse Racing", "Orion Motorsport"],
       "currentTeam": {
@@ -229,6 +239,7 @@
       "isActive": true,
       "birthdate": "1995-10-21",
       "firstRace": "2017-05-02",
+      "raceWins": 17,
       "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/GMB.jpg?raw=true",
       "teams": ["Titan Racing", "Quantum Racing"],
       "currentTeam": {
@@ -251,6 +262,7 @@
       "isActive": true,
       "birthdate": "1993-12-08",
       "firstRace": "2014-04-26",
+      "raceWins": 4,
       "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/JRH.jpg?raw=true",
       "teams": ["Nova Motorsport", "Apex Velocity"],
       "currentTeam": {
@@ -273,6 +285,7 @@
       "isActive": true,
       "birthdate": "1997-07-15",
       "firstRace": "2018-03-21",
+      "raceWins": 8,
       "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/WGR.jpg?raw=true",
       "teams": ["Thunderstrike GP", "Phoenix Dynamics"],
       "currentTeam": {
@@ -295,6 +308,7 @@
       "isActive": true,
       "birthdate": "1996-08-29",
       "firstRace": "2017-10-10",
+      "raceWins": 20,
       "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/DLN.jpg?raw=true",
       "teams": ["Hyperion GP", "Solaris Speed"],
       "currentTeam": {
@@ -317,6 +331,7 @@
       "isActive": true,
       "birthdate": "1999-06-06",
       "firstRace": "2021-02-15",
+      "raceWins": 3,
       "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/RCL.jpg?raw=true",
       "teams": ["Eclipse Racing", "Orion Motorsport"],
       "currentTeam": {
@@ -339,6 +354,7 @@
         "isActive": true,
         "birthdate": "2000-03-03",
         "firstRace": "2021-08-22",
+        "raceWins": 2,
         "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/NMC.jpg?raw=true",
         "teams": ["Titan Racing", "Apex Velocity"],
         "currentTeam": {
@@ -361,6 +377,7 @@
         "isActive": true,
         "birthdate": "1995-11-19",
         "firstRace": "2017-04-09",
+        "raceWins": 0,
         "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/ETH.jpg?raw=true",
         "teams": ["Thunderstrike GP", "Hyperion GP"],
         "currentTeam": {
@@ -383,6 +400,7 @@
         "isActive": true,
         "birthdate": "1998-06-25",
         "firstRace": "2020-03-17",
+        "raceWins": 21,
         "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/KVL.jpg?raw=true",
         "teams": ["Nova Motorsport", "Phoenix Dynamics"],
         "currentTeam": {
@@ -405,6 +423,7 @@
         "isActive": true,
         "birthdate": "1992-05-14",
         "firstRace": "2013-06-02",
+        "raceWins": 7,
         "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/BLD.jpg?raw=true",
         "teams": ["Solaris Speed", "Quantum Racing"],
         "currentTeam": {
@@ -427,6 +446,7 @@
         "isActive": true,
         "birthdate": "2001-12-11",
         "firstRace": "2022-09-05",
+        "raceWins": 1,
         "imageUrl": "https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/XAV.jpg?raw=true",
         "teams": ["Eclipse Racing", "Orion Motorsport"],
         "currentTeam": {
