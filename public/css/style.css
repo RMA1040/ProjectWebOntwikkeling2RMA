@@ -352,19 +352,78 @@ tr:hover {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .team-header {
-        flex-direction: column;
+    main, .team-detail-container, .driver-detail {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    nav {
         text-align: center;
     }
-    
-    .team-meta {
-        justify-content: center;
+
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
     }
-    
-    .team-logo-container {
-        flex: 0 0 150px;
+
+    .driver-header,
+    .team-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .driver-image img,
+    .team-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .driver-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .drivers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    form input[type="text"],
+    form select,
+    form button {
+        width: 100%;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .horizontal-list {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    footer {
+        font-size: 0.9rem;
+        padding: 1rem;
     }
 }
+
 
 .team-info {
     display: flex;
