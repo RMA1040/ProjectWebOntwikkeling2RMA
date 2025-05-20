@@ -126,3 +126,20 @@ export async function login(email: string, password: string) {
         throw new Error("User not found");
     }
 };
+export async function registerUser(email: string, password: string) {
+    // Check of user al bestaat
+    const existingUser = await userCollection.findOne({ email });
+    if (existingUser) {
+        throw new Error("Email is al in gebruik");
+    }
+
+    // Hash het wachtwoord
+    const hashedPassword = await bcrypt.hash(password, 10);
+
+    // Voeg toe aan database met role USER
+    await userCollection.insertOne({
+        email,
+        password: hashedPassword,
+        role: "USER"
+    });
+};

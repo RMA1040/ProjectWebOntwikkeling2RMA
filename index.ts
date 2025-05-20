@@ -4,12 +4,14 @@ import fs from "fs";
 import { Driver, Team, User } from "./interfaces";
 import driver from "./driver.json";
 import team from "./team.json";
-import {connectDb,initializeData,getDrivers,getTeams,getDriverById,getTeamById,getDriversByTeamId,updateDriver,updateTeam,login} from "./database";
+import {connectDb,initializeData,getDrivers,getTeams,getDriverById,getTeamById,getDriversByTeamId,updateDriver,updateTeam,login, registerUser } from "./database";
 import dotenv from "dotenv";
 import session from "./session";
 import { secureMiddleware } from "./secureMiddleware";
 import { loginRouter } from "./routes/loginRouter";
 import { homeRouter } from "./routes/homeRouter";
+import { flashMiddleware } from "./flashMiddleware";
+
 
 
 dotenv.config();
@@ -28,7 +30,7 @@ app.use((req, res, next) => {
     res.locals.user = req.session?.user || null;
     next();
 });
-
+app.use(flashMiddleware);
 
 app.set("port", process.env.PORT || 3000);
 
@@ -50,7 +52,26 @@ async function startServer() {
   await initializeData(driver, team);
 
   // 2. Routes
+// Register pagina tonen
+app.get("/register", (req, res) => {
+  res.render("register"); // simpele registratiepagina met form
+});
 
+app.post("/register", async (req, res) => {
+  const email = req.body.email;
+  const password = req.body.password;
+
+  try {
+    await registerUser(email, password);
+    // Sla een succesbericht op in de sessie
+    req.session.message = { type: "success", message: "Registratie gelukt! Je kunt nu inloggen." };
+    res.redirect("/login"); // door naar login pagina, waar je het bericht toont
+  } catch (e: any) {
+    // Sla een foutmelding op in de sessie
+    req.session.message = { type: "error", message: e.message };
+    res.redirect("/register"); // terug naar register pagina met foutmelding
+  }
+});
   // Drivers route
   app.get("/drivers", secureMiddleware, async (req, res) => {
     const q = typeof req.query.q === "string" ? req.query.q.toLowerCase() : "";

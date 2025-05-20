@@ -7,6 +7,7 @@ export function homeRouter() {
     const router = express.Router();
 
     router.get("/", secureMiddleware, async(req, res) => {
+        const q = typeof req.query.q === "string" ? req.query.q.toLowerCase() : "";
         const drivers = await getDrivers();
         const teams = await getTeams();
         

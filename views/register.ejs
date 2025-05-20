@@ -1,0 +1,19 @@
+<%- include("partials/header") %>
+<main>
+    <h1>Register</h1>
+    <form action="/register" method="post">
+        <label>Email:</label>
+        <input type="email" name="email" required placeholder="driver@irc.be">
+        <br>
+        <label>Password:</label>
+        <input type="password" name="password" required>
+        <br>
+        <button type="submit">Register</button> <% if (message) { %>
+    <div class="alert <%= message.type === 'error' ? 'alert-danger' : 'alert-success' %>">
+    <%= message.message %>
+    </div>
+    <% } %>
+    </form>
+    <a class="button" href="/login">Already have an account?</a>
+</main>
+<%- include("partials/footer") %>
