@@ -1,5 +1,13 @@
 <%- include("partials/header") %>
 <main class="team-detail-container">
+    <section>
+        <article>
+            <%= user.email %>
+            <form action="/logout" method="post">
+                <button type="submit">Logout</button>
+            </form>
+        </article>
+    </section>
     <section class="team-header">
             <img src="<%= team.imageUrl %>" 
                 height = "200px"

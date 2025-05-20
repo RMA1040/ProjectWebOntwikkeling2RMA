@@ -8,6 +8,9 @@ import {connectDb,initializeData,getDrivers,getTeams,getDriverById,getTeamById,g
 import dotenv from "dotenv";
 import session from "./session";
 import { secureMiddleware } from "./secureMiddleware";
+import { loginRouter } from "./routes/loginRouter";
+import { homeRouter } from "./routes/homeRouter";
+
 
 dotenv.config();
 
@@ -16,7 +19,16 @@ const app = express();
 app.set("port", 3000);
 app.set("view engine", "ejs");
 app.use(express.static("public"));
+app.use(express.urlencoded({ extended: true })); // Voor POST forms (x-www-form-urlencoded)
+app.use(express.json()); // Voor JSON body
 app.use(session);
+app.use(loginRouter());
+app.use(homeRouter());
+app.use((req, res, next) => {
+    res.locals.user = req.session?.user || null;
+    next();
+});
+
 
 app.set("port", process.env.PORT || 3000);
 
@@ -38,31 +50,9 @@ async function startServer() {
   await initializeData(driver, team);
 
   // 2. Routes
-  
-  // Login route
-  app.get("/login", (req, res) => {
-    res.render("login");
-  });
-
-// Home route
-app.get("/", async (req, res) => {
-  if (!req.session.user) {
-    return res.redirect("/login");
-  }
-
-  const drivers = await getDrivers();
-  const teams = await getTeams();
-
-  res.render("index", {
-    drivers,
-    teams,
-    user: req.session.user
-  });
-});
-
 
   // Drivers route
-  app.get("/drivers", async (req, res) => {
+  app.get("/drivers", secureMiddleware, async (req, res) => {
     const q = typeof req.query.q === "string" ? req.query.q.toLowerCase() : "";
     const sortField = typeof req.query.sortField === "string" ? req.query.sortField : "name";
     const sortDirection = typeof req.query.sortDirection === "string" ? req.query.sortDirection : "asc";
@@ -84,7 +74,7 @@ app.get("/", async (req, res) => {
   });
 
   // Teams route
-  app.get("/teams", async (req, res) => {
+  app.get("/teams", secureMiddleware, async (req, res) => {
     const q = typeof req.query.q === "string" ? req.query.q.toLowerCase() : "";
     const sortField = typeof req.query.sortField === "string" ? req.query.sortField : "name";
     const sortDirection = typeof req.query.sortDirection === "string" ? req.query.sortDirection : "asc";
@@ -105,7 +95,7 @@ app.get("/", async (req, res) => {
   });
 
   // Driver detail
-  app.get("/driver/:id", async (req, res) => {
+  app.get("/driver/:id", secureMiddleware, async (req, res) => {
     const driverId = req.params.id;
     const driver = await getDriverById(driverId);
 
@@ -119,7 +109,7 @@ app.get("/", async (req, res) => {
     });
   });
   // Edit formulier tonen driver
-  app.get('/driver/:id/edit', async (req, res) => {
+  app.get('/driver/:id/edit', secureMiddleware, async (req, res) => {
   const driverId = req.params.id;
   const driver = await getDriverById(driverId);
   if (!driver) {
@@ -149,7 +139,7 @@ app.post('/driver/:id/edit', async (req, res) => {
     });
 
   // Team detail
-  app.get("/team/:id", async (req, res) => {
+  app.get("/team/:id", secureMiddleware, async (req, res) => {
     const teamId = req.params.id;
     const team = await getTeamById(teamId);
     const teamDrivers = await getDriversByTeamId(teamId);
@@ -165,7 +155,7 @@ app.post('/driver/:id/edit', async (req, res) => {
     });
   });
   // Edit formulier tonen voor een team
-    app.get('/team/:id/edit', async (req, res) => {
+    app.get('/team/:id/edit',secureMiddleware, async (req, res) => {
         const teamId = req.params.id;
         const team = await getTeamById(teamId);
 

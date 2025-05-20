@@ -1,5 +1,13 @@
 <%- include("partials/header") %>
 <main class="driver-detail">
+    <section>
+        <article>
+            <%= user.email %>
+            <form action="/logout" method="post">
+                <button type="submit">Logout</button>
+            </form>
+        </article>
+    </section>
     <section class="driver-header">
         <article class="driver-image">
             <img src="<%= driver.imageUrl %>" 

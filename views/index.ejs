@@ -1,6 +1,13 @@
 <%- include("partials/header") %>
-<%= user.email %> is logged in
 <main>
+    <section>
+        <article>
+            <%= user.email %>
+            <form action="/logout" method="post">
+                <button type="submit">Logout</button>
+            </form>
+        </article>
+    </section>
     <img src="https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/IRC-index.png?raw=true" alt="IRC headliner" height="100%" width="100%">
     <section>
         <h1>Intercontinental Racing Championship</h1>

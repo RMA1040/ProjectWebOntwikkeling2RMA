@@ -1,5 +1,13 @@
 <%- include("partials/header") %>
 <main>
+    <section>
+        <article>
+            <%= user.email %>
+            <form action="/logout" method="post">
+                <button type="submit">Logout</button>
+            </form>
+        </article>
+    </section>
     <img src="https://github.com/RMA1040/ProjectWebOntwikkeling2RMA/blob/main/public/images/IRC-drivers.png?raw=true" alt="IRC teams headliner" height="100%" width="100%">
     <section>
         <h1>All Teams</h1>
