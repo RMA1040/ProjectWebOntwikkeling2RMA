@@ -18,8 +18,6 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(session);
 
-console.log(process.env.PORT);
-console.log(process.env.MONGO_URI)
 app.set("port", process.env.PORT || 3000);
 
 // Helper function to find local images (optioneel, blijft hetzelfde)
