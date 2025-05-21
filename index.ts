@@ -208,9 +208,9 @@ app.post('/driver/:id/edit', async (req, res) => {
 
 
   // Server starten
-  app.listen(app.get("port"), () => {
-    console.log(`[server] http://localhost:${app.get("port")}`);
-  });
+  app.listen(app.get("port"), '0.0.0.0', () => {
+  console.log(`[server] http://0.0.0.0:${app.get("port")}`);
+});
 }
 
 startServer();
